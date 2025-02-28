@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+
+
 }
 
 .container {
@@ -17,22 +19,28 @@ body {
 }
 
 #header {
+    
+  
     background: #333;
     color: #fff;
     padding: 10px 0;
+    
 }
 
-#header .logo {
-    float: left;
+#header .container{
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
 }
+
+
 
 #header .navbar {
-    float: right;
+    align-content: center;
 }
 
-#header .navbar ul {
-    list-style: none;
-}
 
 #header .navbar ul li {
     display: inline;
@@ -56,36 +64,6 @@ body {
 
 .featured-movies, .about-us, .product-list, .cart, .login, .register, .contact {
     padding: 20px 0;
-}
-
-.movie-list, .movies, .cart-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.movie-list .movie, .movies .movie, .cart-items .item {
-    flex: 1 1 calc(33.333% - 40px);
-    background: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-form button {
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #555;
 }
 
 #footer {
