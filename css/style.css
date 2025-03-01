@@ -219,6 +219,15 @@ h1 {
 
 
 /* register */
+#nav:hover {
+    border-style: solid;
+    border-color: aqua;
+    box-shadow: 0 0 aqua;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+
 @media (min-width: 1024px) {
 
     #reg-form {
