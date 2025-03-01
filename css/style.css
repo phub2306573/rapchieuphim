@@ -230,9 +230,10 @@ h1 {
 @media (min-width: 740px) and (max-width:1024px) {
 
     #reg-form {
-        margin: 20% 0px;
-
+        margin: 20% auto;
+        max-width: 480px;
     }
+
 }
 
 @media (max-width: 740px) {
