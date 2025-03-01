@@ -68,6 +68,7 @@ h1 {
 
 
 
+
 .featured-movies,
 .about-us,
 .product-list,
@@ -87,6 +88,47 @@ h1 {
 }
 
 
+.footer-nav{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+#footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer ul li a{
+    color: #fff;
+    text-decoration: none;
+   
+}
+.social-icon .fa-facebook-square {
+    color: #1877F2; 
+}
+
+.social-icon .fa-twitter-square {
+    color: #1DA1F2; 
+}
+
+.social-icon .fa-instagram-square {
+    color: #E4405F; 
+}
+
+.social-icon .fa-youtube-square {
+    color: #FF0000; 
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .footer-nav{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
 
 
 /* index */
@@ -97,6 +139,8 @@ h1 {
     background: #f4f4f4;
     padding: 25px 0;
     text-align: center;
+    grid-area: hero ;
+  
 }
 
 
@@ -122,10 +166,50 @@ h1 {
 
 }
 
+
+.featured-movies{
+    grid-area: featured-movies;
+
+}
+
+.ads-sidebar{
+    grid-area: ads-sidebar;
+    
+  
+}
+
+
 .ads-sidebar div{
     display: flex;
     gap: 10px;
     margin: 0 auto;
+}
+.ads-sidebar .ads-pic {
+    width: 45%;
+    height: auto;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    #trangchu #main-content {
+        display: grid;
+        grid-template-areas:  "left-aside hero ads-sidebar"  
+                                "left-aside featured-movies ads-sidebar"    ;
+        grid-template-columns: 15% 70% 15%;
+    }
+    .ads-sidebar {
+    }
+    .ads-sidebar div{
+        flex-direction: column;
+    }
+    .ads-sidebar .ads-pic {
+        width: 100%;
+    }
+
 }
 
 
