@@ -18,12 +18,12 @@
             <h1 class="logo">CGA</h1>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="about.html">Giới thiệu</a></li>
-                    <li><a href="products.html">Sảm phẩm</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
                     <li><a href="cart.html">Giỏ hàng</a></li>
                     <li><a href="login.html">Đăng nhập</a></li>
-                    <li><a href="register.html">Đăng ký</a></li>
+                    <li><a href="#">Đăng ký</a></li>
                     <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
             </nav>
@@ -31,10 +31,12 @@
     </header>
     <main id="main-content">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center " id="reg-form-container">
                 <div class="col"></div>
-                <div class="col">
-                    <p class="text-center">Đăng ký</p>
+                <div class="col bg-light" id="reg-form">
+                    <div>
+                        <p class="text-center" id="form-title">Tạo tài khoản mới</p>
+                    </div>
                     <form>
                         <fieldset>
                             <label class="form-lable">Tên</label>
@@ -47,7 +49,7 @@
                             <input class="form-control" type="password" placeholder="Mật khẩu" id="password">
                             <lable class="form-lable">Ngày sinh</lable>
                             <div class="input-group mb-3">
-                                <select class="form-select">
+                                <select class="form-select" id="day">
                                     <option selected>Ngày</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -81,7 +83,7 @@
                                     <option value="30">30</option>
                                     <option value="31">31</option>
                                 </select>
-                                <select class="form-select">
+                                <select class="form-select" id="month">
                                     <option selected>Tháng</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -97,7 +99,7 @@
                                     <option value="12">12</option>
                                 </select>
 
-                                <select class="form-select">
+                                <select class="form-select" id="year">
                                     <option selected>Năm</option>
                                     <option value="2025">2025</option>
                                     <option value="2024">2024</option>
@@ -181,17 +183,17 @@
                                     <option value="1946">1946</option>
                                     <option value="1945">1945</option>
                                 </select>
-
                             </div>
-                            <div class="d-grid gap-2 mx-auto">
+                            <div class=" d-grid gap-2 mx-auto">
                                 <button type="submit" class="btn btn-dark ">Đăng ký</button>
                             </div>
-
+                            <div>
+                                <p class="text-center">Đã có tài khoản?<a href="./login.html"> Đăng nhập</a></p>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
-                <div class=" col">
-                </div>
+                <div class=" col"></div>
             </div>
         </div>
     </main>

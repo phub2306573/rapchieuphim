@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +10,7 @@ body {
 
 
 }
+
 h1 {
     font-size: 30px;
 }
@@ -22,18 +22,19 @@ h1 {
 }
 
 #header {
-    
-  
+
+
     background: #333;
     color: #fff;
     padding: 10px 0;
-    
+
 }
+
 #header h1 {
     margin-bottom: 0;
 }
 
-#header .container{
+#header .container {
 
     display: flex;
     align-content: center;
@@ -71,7 +72,13 @@ h1 {
     text-align: center;
 }
 
-.featured-movies, .about-us, .product-list, .cart, .login, .register, .contact {
+.featured-movies,
+.about-us,
+.product-list,
+.cart,
+.login,
+.register,
+.contact {
     padding: 20px 0;
 }
 
@@ -88,7 +95,7 @@ h1 {
 
 /* index */
 
-.Horizontal-Scroll-Bar{
+.Horizontal-Scroll-Bar {
 
     white-space: nowrap;
     overflow-x: auto;
@@ -96,13 +103,30 @@ h1 {
 
 
 }
-.poster{
+
+.poster {
 
     width: 960px;
     height: 540px;
     background-color: lightblue;
     margin: 10px;
     display: inline-block;
-    
 
+
+}
+
+/* register */
+#reg-form-container {
+    margin: 100px 0px 100px 0px;
+}
+
+#reg-form {
+    border-radius: 20px;
+}
+
+#form-title {
+    margin: 20px 0px 10px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px
 }
