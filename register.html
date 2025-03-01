@@ -37,26 +37,28 @@
             </div>
             <form>
                 <fieldset>
-                    <label class="form-lable">Tên</label>
+                    <label for="name" class="form-lable">Tên</label>
                     <input class="form-control" type="textbox" placeholder="Tên" id="name" required>
-                    <label class="form-lable">Email</label>
-                    <input class="form-control" type="email" placeholder="Email" id="Email" required>
-                    <lable class="form-lable">Số điện thoại</lable>
-                    <input class="form-control" type="textbox" placeholder="Số điện thoại" id="phone" required>
-                    <lable class="form-lable">Ngày sinh</lable>
-                    <input class="form-control" type="date" id="Bday" required>
+                    <label for="email" class="form-lable">Email</label>
+                    <input class="form-control" type="email" placeholder="Email" id="email" required>
+                    <label for="phonenumber" class="form-lable">Số điện thoại</label>
+                    <input class="form-control" type="textbox" placeholder="Số điện thoại" id="phonenumber" required>
+                    <label for="birthday" class="form-lable">Ngày sinh</label>
+                    <input class="form-control" type="date" id="birthday" required>
                     <label class="form-lable">Giới tính</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="gender" name="male" required>
-                        <label class="form-check-lable" for="male">Nam</label>
+                    <div class="genderOp">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"  name="gender" value="male" required>
+                            <label class="form-check-lable" for="male">Nam</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"  name="gender" value="female" required>
+                            <label class="form-check-lable" for="female">Nữ</label>
+                        </div>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" id="gender" name="male" required>
-                        <label class="form-check-lable" for="female">Nữ</label>
-                    </div>
-                    <lable class="form-label">Mật khẩu</lable>
+                    <label class="form-label">Mật khẩu</label>
                     <input class="form-control" type="password" placeholder="Mật khẩu" id="password" required>
-                    <lable class="form-label">Nhập lại mật khẩu</lable>
+                    <label class="form-label">Nhập lại mật khẩu</label>
                     <input class="form-control" type="password" placeholder="Nhập lại mật khẩu" id="comfirm-password"
                         required>
 

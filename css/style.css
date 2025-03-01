@@ -16,7 +16,7 @@ h1 {
 }
 
 .container {
-    width: 80%;
+    
     margin: 0 auto;
     padding: 20px;
 }
@@ -219,27 +219,27 @@ h1 {
 
 
 /* register */
-#nav:hover {
+/* #nav:hover {
     border-style: solid;
     border-color: aqua;
     box-shadow: 0 0 aqua;
     padding: 3px;
     border-radius: 3px;
 
-}
+} */
 
 @media (min-width: 1024px) {
 
     #reg-form {
         max-width: 500px;
-        margin-bottom: 10%;
+        margin: 5% auto;
     }
 }
 
 @media (min-width: 740px) and (max-width:1024px) {
 
     #reg-form {
-        margin: 20% auto;
+        margin: 10% auto;
         max-width: 480px;
     }
 
@@ -264,6 +264,13 @@ h1 {
     font-weight: bold;
     font-size: 20px
 }
+
+
+.genderOp {
+    display: flex;
+    gap: 20px;
+}
+
 
 
 /* product */
