@@ -88,45 +88,47 @@ h1 {
 }
 
 
-.footer-nav{
+.footer-nav {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
-#footer ul{
+
+#footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#footer ul li a{
+#footer ul li a {
     color: #fff;
     text-decoration: none;
-   
+
 }
+
 .social-icon .fa-facebook-square {
-    color: #1877F2; 
+    color: #1877F2;
 }
 
 .social-icon .fa-twitter-square {
-    color: #1DA1F2; 
+    color: #1DA1F2;
 }
 
 .social-icon .fa-instagram-square {
-    color: #E4405F; 
+    color: #E4405F;
 }
 
 .social-icon .fa-youtube-square {
-    color: #FF0000; 
+    color: #FF0000;
 }
 
 
 
 @media screen and (min-width: 768px) {
-    .footer-nav{
+    .footer-nav {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
 }
 
 
@@ -139,8 +141,8 @@ h1 {
     background: #f4f4f4;
     padding: 25px 0;
     text-align: center;
-    grid-area: hero ;
-  
+    grid-area: hero;
+
 }
 
 
@@ -167,23 +169,24 @@ h1 {
 }
 
 
-.featured-movies{
+.featured-movies {
     grid-area: featured-movies;
 
 }
 
-.ads-sidebar{
+.ads-sidebar {
     grid-area: ads-sidebar;
-    
-  
+
+
 }
 
 
-.ads-sidebar div{
+.ads-sidebar div {
     display: flex;
     gap: 10px;
     margin: 0 auto;
 }
+
 .ads-sidebar .ads-pic {
     width: 45%;
     height: auto;
@@ -197,15 +200,17 @@ h1 {
 
     #trangchu #main-content {
         display: grid;
-        grid-template-areas:  "left-aside hero ads-sidebar"  
-                                "left-aside featured-movies ads-sidebar"    ;
+        grid-template-areas: "left-aside hero ads-sidebar"
+            "left-aside featured-movies ads-sidebar";
         grid-template-columns: 15% 70% 15%;
     }
-    .ads-sidebar {
-    }
-    .ads-sidebar div{
+
+    .ads-sidebar {}
+
+    .ads-sidebar div {
         flex-direction: column;
     }
+
     .ads-sidebar .ads-pic {
         width: 100%;
     }
@@ -213,15 +218,7 @@ h1 {
 }
 
 
-
-
-
-
-
 /* register */
-#reg-form-container {
-    margin: 100px 0px 100px 0px;
-}
 
 #reg-form {
     border-radius: 20px;
@@ -237,7 +234,7 @@ h1 {
 
 /* product */
 
-.phim_Product{
+.phim_Product {
     padding: 25px;
     display: inline-block;
     border: solid 4px black;
@@ -245,29 +242,29 @@ h1 {
     margin-top: 2px;
 }
 
-.img_Product{
+.img_Product {
     border: solid black 5px;
     height: 250px;
     width: 230px;
 }
 
-#div_ContentAndImgProduct{
+#div_ContentAndImgProduct {
     display: inline-block;
     text-align: center;
-    
+
 }
 
-#main_Product{
+#main_Product {
     margin: auto;
     width: 80%;
 }
 
-#body_Product td{
+#body_Product td {
     text-align: left;
     font-size: 18px;
 }
 
-.div_Content{
+.div_Content {
     height: 250px;
     width: 230px;
 }
