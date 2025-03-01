@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 
 }
 
@@ -127,6 +127,9 @@ h1 {
     gap: 10px;
     margin: 0 auto;
 }
+
+
+
 
 
 
