@@ -275,59 +275,165 @@ h1 {
 
 /* product */
 
-.phim_Product {
-    padding: 25px;
-    display: inline-block;
-    border: solid 4px black;
-    margin-bottom: 5px;
-    margin-top: 2px;
-    border-radius: 8%;
+@media (max-width: 600px) {
+    .phim_Product {
+        padding: 25px;
+        display: inline-block;
+        border: solid 2px black;
+        margin-bottom: 5px;
+        margin-top: 2px;
+        border-radius: 8%;
+        position: relative; 
+    }
+    
+    .img_Product {
+        border: solid black 5px;
+        height: 180px;
+        width: 150px;
+    }
+    
+    main img{
+        transition: transform 0.3s ease;
+    }
+    
+    main img:hover{
+        transform: scale(1.05);
+    }
+    
+    #div_ContentAndImgProduct {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #main_Product {
+        margin: auto;
+    }
+    
+    #body_Product{
+        background-color: rgba(73, 14, 14, 0.158);
+    }
+    
+    #body_Product td {
+        text-align: left;
+        font-size: 15px;
+    }
+    
+    .div_Content {
+        padding-top: 5px;
+        height: 230px;
+        width: 180px;
+    }
+    
+    .name_movie{
+        height: 100px;
+        width: 150px;
+        display: inline;
+        color: rgb(39, 8, 8);
+    }
+    
+    #TieuDe{
+        font-size: 50px;
+        margin-bottom: 30px;
+        color: white;
+        background-color: black;
+        border-bottom: solid black;
+    }
+    
+    .div_Icon{
+        position: absolute;
+        bottom: 2%;
+    }
+    
+    .Heart{
+        position: relative;
+        color: black;
+        right: 5%;
+        font-size: 25px;
+    }
+    
+    .Cart{
+        position: relative;
+        left: 120px;
+        color: rgb(165, 112, 27);
+        font-size: 25px;
+    }
 }
 
-.img_Product {
-    border: solid black 5px;
-    height: 250px;
-    width: 230px;
-}
-
-main img{
-    transition: transform 0.3s ease;
-}
-
-main img:hover{
-    transform: scale(1.05);
-}
-
-#div_ContentAndImgProduct {
-    display: inline-block;
-    text-align: center;
-}
-
-#main_Product {
-    margin: auto;
-    width: 80%;
-}
-
-#body_Product td {
-    text-align: left;
-    font-size: 20px;
-}
-
-.div_Content {
-    height: 250px;
-    width: 230px;
-}
-
-.name_movie{
-    height: 100px;
-    width: 230px;
-    display: inline;
-    color: rgb(39, 8, 8);
-}
-
-#TieuDe{
-    font-size: 50px;
-    margin-bottom: 30px;
-    font-weight: 10;
-    border-bottom: solid black;
+@media (min-width:600px){
+    .phim_Product {
+        padding: 25px;
+        display: inline-block;
+        border: solid 2px black;
+        margin-bottom: 5px;
+        margin-top: 2px;
+        border-radius: 8%;
+    }
+    
+    .img_Product {
+        border: solid black 5px;
+        height: 250px;
+        width: 230px;
+    }
+    
+    main img{
+        transition: transform 0.3s ease;
+    }
+    
+    main img:hover{
+        transform: scale(1.05);
+    }
+    
+    #div_ContentAndImgProduct {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #main_Product {
+        margin: auto;
+        width: 80%;
+    }
+    
+    #body_Product{
+        background-color: rgba(73, 14, 14, 0.158);
+    }
+    
+    #body_Product td {
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    .div_Content {
+        height: 250px;
+        width: 230px;
+    }
+    
+    .name_movie{
+        height: 100px;
+        width: 230px;
+        display: inline;
+        color: rgb(39, 8, 8);
+    }
+    
+    #TieuDe{
+        font-size: 50px;
+        margin-bottom: 30px;
+        font-weight: 10;
+        border-bottom: solid black;
+    }
+    
+    
+    
+    .Heart{
+        position: relative;
+        right: 25%;
+        color: black;
+        font-size: 35px;
+    }
+    
+    .Cart{
+        position: relative;
+        left: 25%;
+        color: rgb(165, 112, 27);
+        font-size: 35px;
+    }
 }
