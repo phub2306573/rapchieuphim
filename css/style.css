@@ -278,56 +278,57 @@ h1 {
 
 @media (max-width: 600px) {
     .phim_Product {
-        padding: 25px;
         display: inline-block;
-        border: solid 2px black;
         margin-bottom: 5px;
         margin-top: 2px;
-        border-radius: 8%;
-        position: relative; 
-    }
-    
-    .img_Product {
-        border: solid black 5px;
-        height: 180px;
+        margin-left: 5px;
+        margin-right: 5px;
+        position: relative;
         width: 150px;
+        height: 230px;
     }
-    
-    main img{
-        transition: transform 0.3s ease;
+
+    .aSectionPhim{
+        display: inline-block;
     }
-    
-    main img:hover{
-        transform: scale(1.05);
+
+    .img_Product {
+        height: 180px;
+        width: 147px;
+        border-radius: 10%;
     }
-    
+     
     #div_ContentAndImgProduct {
         display: inline-block;
         text-align: center;
     }
     
     #main_Product {
-        margin: auto;
+        width: 100%;
     }
     
     #body_Product{
         background-color: rgba(73, 14, 14, 0.158);
     }
     
-    #body_Product td {
-        text-align: left;
-        font-size: 15px;
+    #body_Product table {
+        display: none;
     }
     
     .div_Content {
         padding-top: 5px;
-        height: 230px;
-        width: 180px;
+        height: 20px;
+        width: 200px;
+    }
+
+    #div_Content td{
+        font-size: 10px;
     }
     
     .name_movie{
-        height: 100px;
-        width: 150px;
+        height: 80px;
+        width: 50px;
+        font-size: 15px;
         display: inline;
         color: rgb(39, 8, 8);
     }
@@ -341,6 +342,8 @@ h1 {
     }
     
     .div_Icon{
+        height: 0px;
+        width: 0px;
         position: absolute;
         bottom: 2%;
     }
@@ -350,6 +353,7 @@ h1 {
         color: black;
         right: 5%;
         font-size: 25px;
+        display: none;
     }
     
     .Cart{
@@ -357,30 +361,40 @@ h1 {
         left: 120px;
         color: rgb(165, 112, 27);
         font-size: 25px;
+        display: none;
     }
 }
 
+
 @media (min-width:600px){
     .phim_Product {
-        padding: 25px;
         display: inline-block;
-        border: solid 2px black;
         margin-bottom: 5px;
         margin-top: 2px;
         border-radius: 8%;
+        width: 300px;
+        height: 320px;
     }
     
     .img_Product {
         border: solid black 5px;
-        height: 250px;
-        width: 230px;
+        border-radius: 5%;
+        height: 90%;
+        width: 80%;
+        display: block;
+        margin: 5%;
     }
-    
-    main img{
+    .aSectionPhim{
+        border: solid black 2px;
+        border-radius: 8%;
+        display: inline-block;
+        margin: 5px;
+    }
+    #main_Product img{
         transition: transform 0.3s ease;
     }
     
-    main img:hover{
+    #main_Product img:hover{
         transform: scale(1.05);
     }
     
@@ -404,15 +418,19 @@ h1 {
     }
     
     .div_Content {
-        height: 250px;
-        width: 230px;
+        height: 200px;
+        width: 180px;
+        padding-left: 5%;
     }
     
     .name_movie{
-        height: 100px;
-        width: 230px;
         display: inline;
         color: rgb(39, 8, 8);
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
     }
     
     #TieuDe{
