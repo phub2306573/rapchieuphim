@@ -43,18 +43,38 @@
         </header>
         <main id = "main_Product">
             <div id="TieuDe">Phim Sắp Chiếu</div>
+
+            <div id="choose_type">
+               <select name="TheLoai" id="The_Loai">
+                    <option value="All">Tất Cả</option>
+                    <option value="hoat_hinh">Hoạt Hình</option>
+                    <option value="kinh_di">Kinh Dị</option>
+                    <option value="hanh_dong">Hành Động</option>
+                    <option value="tre_em">Trẻ Em</option>
+               </select>
+
+               <select name="thoi_luong" id="thoi_luong">
+                    <option value="All_thoiluong">Tất Cả</option>
+                    <option value="i45">Dưới 45 Phút</option>
+                    <option value="i60">45 đến 60 phút</option>
+                    <option value="tren60">Trên 60</option>
+
+               </select>
+               <input type="submit" name="chon" id="Chon" value=" Chọn " onclick="selectTypeOfFilm()"></i>
+            </div>
+
             <div id = "div_ContentAndImgProduct">
-                <div class="aSectionPhim">                
+                <div class="aSectionPhim hoat_hinh tre_em hanh_dong tren60">                
                     <section class="phim_Product">
                         <img src="/images/phim1.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Na Tra <br>Ma Đồng Đáo Hải</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b> Hoạt Hình, Hành Động</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng: </b>121 phút 51 giây</td>
+                                    <td><b>Thời Lượng: </b>70 Phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b> 07-03-2025</td>
@@ -67,7 +87,7 @@
                         </div>
                     </section> </div>
  
-                <div class ="aSectionPhim">                
+                <div class ="aSectionPhim tre_em hoat_hinh i45">                
                     <section class="phim_Product">
                         <img src="/images/phim2.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Magical <br>Fantasy World</b></div>
@@ -77,7 +97,7 @@
                                     <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b>34 Phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -88,16 +108,17 @@
                             <i class="fa-solid fa-heart Heart" onclick="changeHeartColor(1)"></i>
                             <i class="fa-solid fa-cart-shopping Cart"></i>
                         </div>
-                </section> </div>
+                    </section> 
+                </div>
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim hanh_dong i60">
                     <section class="phim_Product">
                         <img src="/images/phim3.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Đào, phở <br>và piano</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Tinh Thần Dân Tộc</td>
+                                    <td><b>Thể Loại:</b> Tinh Thần Dân Tộc, Hành Động</td>
                                 </tr>
                                 <tr>
                                     <td><b>Thời Lượng:</b> 60 phút</td>
@@ -115,7 +136,7 @@
                 </div>
 
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim kinh_di i60">
                     <section class="phim_Product">
                         <img src="/images/phim4.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Nữ Tu <br>Bóng Tối</b></div>
@@ -140,17 +161,17 @@
 
                 </section> 
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim kinh_di hanh_dong tren60">
                     <section class="phim_Product">
                         <img src="/images/phim5.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Cá Sấu <br>Tử Thần</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b>Kinh Dị, Hành Động</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b>90 phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -165,17 +186,17 @@
                 </div>
 
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim kinh_di i45">
                     <section class="phim_Product">
                         <img src="/images/phim6.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Kẻ <br>Ăn Hồn</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b>Kinh Dị</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b> 42 phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -189,17 +210,17 @@
                     </section> 
                 </div>
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim hanh_dong tren60">
                     <section class="phim_Product">
                         <img src="/images/phim7.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Bố <br> Già</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b>Hành Động, Gia Đình</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b>87 Phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -213,17 +234,17 @@
                     </section> 
                 </div>
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim hanh_dong tren60">
                     <section class="phim_Product">
                         <img src="/images/phim8.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Cuộc Đào Tẩu <br>Trên Không</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b> Hành Động</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b>120 Phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -238,17 +259,17 @@
                 </div>
 
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim hanh_dong i60">
                     <section class="phim_Product"> 
                         <img src="/images/phim9.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Cửu Long <br>Thành Trại</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b>Hành Động</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b> 55 phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -263,14 +284,14 @@
                 </div>
 
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim kinh_di">
                     <section class="phim_Product">
                         <img src="/images/phim10.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Quỷ <br>Nhập Tràng </b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b>Kinh Dị</td>
                                 </tr>
                                 <tr>
                                     <td><b>Thời Lượng:</b> 60 phút</td>
@@ -288,17 +309,17 @@
                 </div>
 
                 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim tre_em i60">
                     <section class="phim_Product">
                         <img src="/images/phim11.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Nàng <br>Bạch Tuyết</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b>Cổ Tích</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b> 55 phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -313,17 +334,17 @@
                 </div>
                 
                 
-                <div class="aSectionPhim">    
+                <div class="aSectionPhim hanh_dong tren60">    
                     <section class="phim_Product">
                     <img src="/images/phim12.jpg" alt="" class="img_Product">
                     <div class="name_movie"><b>Venom <br>The Last Dance</b></div>
                     <div class="div_Content">
                         <table>
                             <tr>
-                                <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                <td><b>Thể Loại:</b>Hành Động</td>
                             </tr>
                             <tr>
-                                <td><b>Thời Lượng:</b> 60 phút</td>
+                                <td><b>Thời Lượng:</b>95 phút</td>
                             </tr>
                             <tr>
                                 <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -337,7 +358,7 @@
                     </section> 
                 </div>
                 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim tre_em hoat_hinh i45">
                     <section class="phim_Product">
                         <img src="/images/phim13.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Một Bộ Phim <br>MineCraft</b></div>
@@ -347,7 +368,7 @@
                                     <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b>33 Phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>
@@ -362,14 +383,14 @@
                 </div>
                 
                 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim tre_em hoat_hinh i60">
                     <section class="phim_Product">
                         <img src="/images/phim14.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Phim  <br>Xì Trum</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b> Hoạt Hình</td>
                                 </tr>
                                 <tr>
                                     <td><b>Thời Lượng:</b> 60 phút</td>
@@ -387,17 +408,17 @@
                 </div>
                 
 
-                <div class="aSectionPhim">
+                <div class="aSectionPhim hanh_dong i60">
                     <section class="phim_Product">
                         <img src="/images/phim15.jpg" alt="" class="img_Product">
                         <div class="name_movie"><b>Bí Kiếp <br>Luyện Rồng</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b> Hoạt Hình, Phiêu Lưu</td>
+                                    <td><b>Thể Loại:</b> Hành Động, Phiêu Lưu</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Thời Lượng:</b> 60 phút</td>
+                                    <td><b>Thời Lượng:</b>59 Phút</td>
                                 </tr>
                                 <tr>
                                     <td><b>Khởi Chiếu:</b>07-03-2025</td>

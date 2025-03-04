@@ -414,11 +414,12 @@ h1 {
     }
     
     #TieuDe{
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 30px;
         color: white;
         background-color: black;
         border-bottom: solid black;
+        margin: 10px;
     }
     
     .div_Icon{
@@ -442,6 +443,25 @@ h1 {
         color: rgb(165, 112, 27);
         font-size: 25px;
         display: none;
+    }
+
+
+
+    #choose_type{
+        text-align: center;
+        margin: 10px;
+    }
+
+    #The_Loai{
+        height: 30px;
+        width: 120px;
+        border-radius: 5%;
+    }
+
+    #thoi_luong{
+        height: 30px;
+        width: 160px;
+        border-radius: 5%;
     }
 }
 
