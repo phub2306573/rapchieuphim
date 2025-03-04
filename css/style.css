@@ -45,9 +45,7 @@ h1 {
 
 
 
-#header .navbar {
-    align-content: center;
-}
+
 
 #header .navbar ul {
     margin-bottom: 0;
@@ -56,6 +54,13 @@ h1 {
 #header .navbar ul li {
     display: inline;
     margin-left: 20px;
+    padding: 10px 20px;
+    
+}
+#header .navbar ul li:hover {
+    background: #aeb9c7;
+    transition: transform 0.3s ease-out;
+    transform: scale(1.02);
 }
 
 #header .navbar ul li a {
@@ -65,6 +70,51 @@ h1 {
 
 #main-content {
     padding: 20px 0;
+}
+
+@media (min-width: 520px) and (max-width: 768px) {
+    #header .container {
+        flex-direction: column; 
+    }
+    #header .navbar ul {
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10%;
+        width: 90%;
+    }
+
+    #header .navbar ul li {
+        
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+@media  (max-width: 519px) {
+    #header .container {
+        flex-direction: column; 
+    }
+    #header .navbar ul {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: 100%;
+
+    }
+
+    #header .navbar ul li {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        display: block;
+      
+        
+    }
+    
 }
 
 
@@ -206,7 +256,7 @@ h1 {
         grid-template-columns: 15% 70% 15%;
     }
 
-    .ads-sidebar {}
+ 
 
     .ads-sidebar div {
         flex-direction: column;
@@ -297,7 +347,7 @@ h1 {
         transition: transform 0.3s ease;
     }
     
-    main img:hover{
+    #main_Product main img:hover{
         transform: scale(1.05);
     }
     
@@ -380,7 +430,7 @@ h1 {
         transition: transform 0.3s ease;
     }
     
-    main img:hover{
+    #main_Product main img:hover{
         transform: scale(1.05);
     }
     
