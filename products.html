@@ -41,11 +41,12 @@
             </div>
     
         </header>
+        <div id="TieuDe">Phim Sắp Chiếu</div>
         <main id = "main_Product">
-            <div id="TieuDe">Phim Sắp Chiếu</div>
-
+            
             <div id="choose_type">
-               <select name="TheLoai" id="The_Loai">
+                <select name="TheLoai" id="The_Loai" aria-placeholder="Thể Loại">
+                    <option value="All" disabled selected>Thể Loại</option>
                     <option value="All">Tất Cả</option>
                     <option value="hoat_hinh">Hoạt Hình</option>
                     <option value="kinh_di">Kinh Dị</option>
@@ -53,7 +54,8 @@
                     <option value="tre_em">Trẻ Em</option>
                </select>
 
-               <select name="thoi_luong" id="thoi_luong">
+               <select name="thoi_luong" id="thoi_luong" aria-placeholder="Thời Lượng">
+                    <option value="All_thoiluong" disabled selected>Thời Lượng</option>
                     <option value="All_thoiluong">Tất Cả</option>
                     <option value="i45">Dưới 45 Phút</option>
                     <option value="i60">45 đến 60 phút</option>
@@ -90,7 +92,7 @@
                 <div class ="aSectionPhim tre_em hoat_hinh i45">                
                     <section class="phim_Product">
                         <img src="/images/phim2.jpg" alt="" class="img_Product">
-                        <div class="name_movie"><b>Magical <br>Fantasy World</b></div>
+                        <div class="name_movie"><b>Nobita's Sky <br>Utopia in Hindi</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
@@ -213,11 +215,11 @@
                 <div class="aSectionPhim hanh_dong tren60">
                     <section class="phim_Product">
                         <img src="/images/phim7.jpg" alt="" class="img_Product">
-                        <div class="name_movie"><b>Bố <br> Già</b></div>
+                        <div class="name_movie"><b>Breaking <br> Bad</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b>Hành Động, Gia Đình</td>
+                                    <td><b>Thể Loại:</b>Hành Động</td>
                                 </tr>
                                 <tr>
                                     <td><b>Thời Lượng:</b>87 Phút</td>
@@ -259,14 +261,14 @@
                 </div>
 
 
-                <div class="aSectionPhim hanh_dong i60">
+                <div class="aSectionPhim tre_em hoat_hinh i60">
                     <section class="phim_Product"> 
                         <img src="/images/phim9.jpg" alt="" class="img_Product">
-                        <div class="name_movie"><b>Cửu Long <br>Thành Trại</b></div>
+                        <div class="name_movie"><b>Shin Cậu Bé <br> Bút Chì</b></div>
                         <div class="div_Content">
                             <table>
                                 <tr>
-                                    <td><b>Thể Loại:</b>Hành Động</td>
+                                    <td><b>Thể Loại:</b>Hoạt Hình,Trẻ Em</td>
                                 </tr>
                                 <tr>
                                     <td><b>Thời Lượng:</b> 55 phút</td>
@@ -434,6 +436,7 @@
                 
 
         </main>
+        <br><br><br><br>
         <footer id="footer">
             <div class="container footer-nav">
     

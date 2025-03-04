@@ -472,7 +472,7 @@ h1 {
         margin-top: 2px;
         border-radius: 8%;
         width: 300px;
-        height: 320px;
+        height: 400px;
     }
     
     .img_Product {
@@ -482,6 +482,7 @@ h1 {
         width: 80%;
         display: block;
         margin: 5% auto;
+        object-fit: cover;
     }
     .aSectionPhim{
         border: solid black 2px;
@@ -500,11 +501,14 @@ h1 {
     #div_ContentAndImgProduct {
         display: inline-block;
         text-align: center;
+        grid-area: right;
     }
     
     #main_Product {
-        margin: auto;
-        width: 80%;
+        width: 90%;
+        display: grid;
+        grid-template-areas:
+        "left rigth rigth right right right right";
     }
     
     #body_Product{
@@ -517,10 +521,12 @@ h1 {
     }
     
     .div_Content {
-        height: 200px;
-        width: 180px;
+        height: 150px;
+        width: 300px;
         padding-left: 5%;
+
     }
+
     
     .name_movie{
         display: inline;
@@ -537,9 +543,15 @@ h1 {
         margin-bottom: 30px;
         font-weight: 10;
         border-bottom: solid black;
+        margin-left: 10%;
+        margin-right: 10%;
+
     }
     
-    
+    .div_Icon{
+        position: relative;
+        bottom: 8px;
+    }
     
     .Heart{
         position: relative;
@@ -554,4 +566,48 @@ h1 {
         color: rgb(165, 112, 27);
         font-size: 35px;
     }
+
+    #choose_type{
+        grid-area: left;
+        display: block;
+    }
+
+    #The_Loai{
+        width: 200px;
+        height: 40px;
+        margin-top: 70px;
+        margin-left:28px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        border-radius: 5%;
+        font-weight: 200;
+        display: block;
+        text-align: center;
+        background-color: rgb(210, 192, 192);
+    }
+    #thoi_luong{
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        margin-left:28px;
+        margin-bottom: 10px;
+        border-radius: 5%;
+        text-align: center;
+        display: block;
+        background-color: rgb(210, 192, 192);
+    }
+
+    #Chon{
+        position: absolute;
+        left: 100px ;
+        height: 50px;
+        width: 50px;
+        border-radius: 25%;
+        border: solid 1px black;
+        font-size: 15px;
+        font-weight: 500;
+        display: block;
+        background-color: rgb(210, 192, 192);
+    }
+
 }
