@@ -426,6 +426,7 @@ h1 {
         width: 0px;
         position: absolute;
         bottom: 2%;
+        display: none;
     }
     
     .Heart{
@@ -433,7 +434,6 @@ h1 {
         color: black;
         right: 5%;
         font-size: 25px;
-        display: none;
     }
     
     .Cart{
@@ -441,7 +441,6 @@ h1 {
         left: 120px;
         color: rgb(165, 112, 27);
         font-size: 25px;
-        display: none;
     }
 
 
@@ -505,10 +504,10 @@ h1 {
     }
     
     #main_Product {
-        width: 90%;
+        /* width: 90%; */
         display: grid;
         grid-template-areas:
-        "left rigth rigth right right right right";
+        "left right right right right right" ;
     }
     
     #body_Product{
@@ -580,7 +579,6 @@ h1 {
         font-size: 18px;
         margin-bottom: 10px;
         border-radius: 5%;
-        font-weight: 200;
         display: block;
         text-align: center;
         background-color: rgb(210, 192, 192);
