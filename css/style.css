@@ -465,6 +465,9 @@ h1 {
     #aside{
         display: none;
     }
+    .displayinMobile{
+        display: none;
+    }
 }
 
 
@@ -513,7 +516,6 @@ h1 {
     
     #choose_type{
         grid-area: left;
-        display: block;
     }
     #main_Product {
         /* width: 90%; */
@@ -524,7 +526,7 @@ h1 {
     }
     
     #body_Product{
-        background-color: rgba(73, 14, 14, 0.158);
+        background-color:rgba(73, 14, 14, 0.158);
     }
     
     #body_Product td {
@@ -578,32 +580,32 @@ h1 {
 
 
     #The_Loai{
-        width: 200px;
+        width: 65%;
         height: 40px;
         margin-top: 70px;
-        margin-left:28px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 18px;
         margin-bottom: 10px;
         border-radius: 5%;
         display: block;
         text-align: center;
-        background-color: rgb(210, 192, 192);
     }
     #thoi_luong{
-        width: 200px;
+        width: 65%;
         height: 40px;
         font-size: 18px;
-        margin-left:28px;
-        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 5%;
         text-align: center;
         display: block;
-        background-color: rgb(210, 192, 192);
     }
 
     #Chon{
-        position: absolute;
-        left: 100px ;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
         height: 50px;
         width: 50px;
         border-radius: 25%;
@@ -611,7 +613,19 @@ h1 {
         font-size: 15px;
         font-weight: 500;
         display: block;
-        background-color: rgb(210, 192, 192);
     }
-
+    
+    #BoLoc{
+        padding-top: 25px;
+        border-radius: 10%;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 25px;
+        background-color: #ffffff;
+        position: relative;
+        left: 15%;
+        top: 50px;
+        width: 80%;
+        height: 500px;
+    }
 }

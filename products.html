@@ -33,24 +33,28 @@
         <main id = "main_Product">
             
             <div id="choose_type">
-                <select name="TheLoai" id="The_Loai" aria-placeholder="Thể Loại">
-                    <option value="All" disabled selected>Thể Loại</option>
-                    <option value="All">Tất Cả</option>
-                    <option value="hoat_hinh">Hoạt Hình</option>
-                    <option value="kinh_di">Kinh Dị</option>
-                    <option value="hanh_dong">Hành Động</option>
-                    <option value="tre_em">Trẻ Em</option>
-               </select>
 
-               <select name="thoi_luong" id="thoi_luong" aria-placeholder="Thời Lượng">
-                    <option value="All_thoiluong" disabled selected>Thời Lượng</option>
-                    <option value="All_thoiluong">Tất Cả</option>
-                    <option value="i45">Dưới 45 Phút</option>
-                    <option value="i60">45 đến 60 phút</option>
-                    <option value="tren60">Trên 60</option>
-
-               </select>
-               <input type="submit" name="chon" id="Chon" value=" Chọn " onclick="selectTypeOfFilm()"></i>
+                <div id="BoLoc">
+                    <b class="displayinMobile">Bộ Lộc</b>
+                    <select name="TheLoai" id="The_Loai" aria-placeholder="Thể Loại">
+                        <option value="All" disabled selected>Thể Loại</option>
+                        <option value="All">Tất Cả</option>
+                        <option value="hoat_hinh">Hoạt Hình</option>
+                        <option value="kinh_di">Kinh Dị</option>
+                        <option value="hanh_dong">Hành Động</option>
+                        <option value="tre_em">Trẻ Em</option>
+                   </select>
+    
+                   <select name="thoi_luong" id="thoi_luong" aria-placeholder="Thời Lượng">
+                        <option value="All_thoiluong" disabled selected>Thời Lượng</option>
+                        <option value="All_thoiluong">Tất Cả</option>
+                        <option value="i45">Dưới 45 Phút</option>
+                        <option value="i60">45 đến 60 phút</option>
+                        <option value="tren60">Trên 60</option>
+    
+                   </select>
+                   <input type="submit" name="chon" id="Chon" value=" Chọn " onclick="selectTypeOfFilm()"></i>
+                </div>
             </div>
 
             <div id = "div_ContentAndImgProduct">
