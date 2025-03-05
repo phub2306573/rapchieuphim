@@ -462,6 +462,9 @@ h1 {
         width: 160px;
         border-radius: 5%;
     }
+    #aside{
+        display: none;
+    }
 }
 
 
@@ -471,8 +474,8 @@ h1 {
         margin-bottom: 5px;
         margin-top: 2px;
         border-radius: 8%;
-        width: 300px;
-        height: 400px;
+        width: 230px;
+        height: 250px;
     }
     
     .img_Product {
@@ -489,6 +492,7 @@ h1 {
         border-radius: 8%;
         display: inline-block;
         margin: 5px;
+        background-color: rgb(215, 200, 200);
     }
     #main_Product img{
         transition: transform 0.3s ease;
@@ -501,14 +505,22 @@ h1 {
     #div_ContentAndImgProduct {
         display: inline-block;
         text-align: center;
+        grid-area: center;
+    }
+    #aside{
         grid-area: right;
     }
     
+    #choose_type{
+        grid-area: left;
+        display: block;
+    }
     #main_Product {
         /* width: 90%; */
         display: grid;
         grid-template-areas:
-        "left right right right right right" ;
+        "left center right";
+        grid-template-columns: 20% 75% 5%;
     }
     
     #body_Product{
@@ -517,21 +529,20 @@ h1 {
     
     #body_Product td {
         text-align: left;
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .div_Content {
         height: 150px;
-        width: 300px;
+        width: 230px;
         padding-left: 5%;
-
     }
 
     
     .name_movie{
         display: inline;
         color: rgb(39, 8, 8);
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 500;
         text-align: center;
         width: 100%;
@@ -543,8 +554,6 @@ h1 {
         margin-bottom: 30px;
         font-weight: 10;
         border-bottom: solid black;
-        margin-left: 10%;
-        margin-right: 10%;
 
     }
     
@@ -567,10 +576,6 @@ h1 {
         font-size: 35px;
     }
 
-    #choose_type{
-        grid-area: left;
-        display: block;
-    }
 
     #The_Loai{
         width: 200px;
