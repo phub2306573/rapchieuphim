@@ -641,8 +641,9 @@ h1 {
     margin: auto;
 }
 .text_gioithieu {
+    text-indent: 30px;
     padding: 20px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
 }
 #video_gioithieu {
@@ -666,9 +667,9 @@ h1 {
 @media (max-width: 400px){
     .container_gallery{
         grid-template-areas:"topleft"
-                        "topright"
-                        "botleft"
-                        "botright";
+                            "topright"
+                            "botleft"
+                            "botright";
     }
 }
 .image1{
@@ -691,3 +692,25 @@ h1 {
     border-radius: 5px;
     grid-area: botright;
 }
+ul{
+    list-style-type: none;
+}
+/* .fa-star{
+    color: blue;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    from { transform: rotateY(-180deg); }
+    to { transform: rotateY(180deg); }
+} */
+.fa-star {
+    display: inline-block;
+    font-size: 30px;
+    animation: led_rgb 3s infinite alternate;
+  }
+  
+  @keyframes led_rgb {
+    0% { color: red; }
+    50% { color: green; }
+    100% { color: blue; }
+  }
