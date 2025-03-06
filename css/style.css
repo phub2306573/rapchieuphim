@@ -480,7 +480,6 @@ h1 {
         width: 230px;
         height: 250px;
     }
-    
     .img_Product {
         border: solid black 5px;
         border-radius: 5%;
@@ -628,4 +627,67 @@ h1 {
         width: 80%;
         height: 500px;
     }
+}
+/* about */
+#gioithieu{
+    max-width: 1024px;
+    margin: auto;
+}
+.box{
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    justify-items: center;
+    margin: auto;
+}
+.text_gioithieu {
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+#video_gioithieu {
+    width: 100%;
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+}
+@media (max-width: 600px) {
+    .box {
+        padding: 5px;
+    }
+}
+.container_gallery{
+    display: grid;
+    grid-template-areas:"topleft topright"
+                        "botleft botright";
+    justify-items: center;
+    gap: 10px;
+
+    }
+@media (max-width: 400px){
+    .container_gallery{
+        grid-template-areas:"topleft"
+                        "topright"
+                        "botleft"
+                        "botright";
+    }
+}
+.image1{
+    width: 100%;
+    border-radius: 5px;
+    grid-area: topleft;
+}
+.image2{
+    width: 100%;
+    border-radius: 5px;
+    grid-area: topright;
+}
+.image3{
+    width: 100%;    
+    border-radius: 5px;
+    grid-area: botleft;
+}
+.image4{
+    width: 100%;
+    border-radius: 5px;
+    grid-area: botright;
 }
