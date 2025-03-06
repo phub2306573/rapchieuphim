@@ -35,38 +35,61 @@
             <div class="form-box">
                 <h2>Tạo tài khoản mới</h2>
                 <form action="" method="post">
-                    <label for="name" class="form-label">Họ và tên</label>
-                    <span class="input-icon"><img class="input-form-icon" src="images/user.png"></span>
-                    <input class="input-box form-control" type="textbox" placeholder="Họ và tên" id="name" name="name" title="Vui lòng nhập họ và tên">
-                    <label for="email" class="form-label">Email</label>
-                    <span class="input-icon"><img class="input-form-icon" src="images/email.png"></span>
-                    <input class="input-box form-control" type="email" placeholder="Email" id="email" name="email" title="Vui lòng nhập email">
-                    <label for="phone-number" class="form-label">Số điện thoại</label>
-                    <span class="input-icon"><img class="input-form-icon" src="images/phone.png"></span>
-                    <input class="input-box form-control" type="textbox" placeholder="Số điện thoại" id="phone-number" name="phoneNumber" title="Vui lòng nhập số điện thoại">
-                    <label for="birth-day" class="form-label">Ngày sinh</label>
-                    <input class="input-box form-control" type="date" id="birth-day" name="birthDay" title="Vui lòng nhập ngày sinh">
-                    <label class="form-label">Giới tính</label>
-                    <div class="genderOp">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio"  name="gender" value="male" required>
-                            <label class="form-check-lable" for="male">Nam</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio"  name="gender" value="female" required>
-                            <label class="form-check-lable" for="female">Nữ</label>
+
+                    <div form="form-group">
+                        <label for="name" class="form-label">Họ và tên</label>
+                        <span class="input-icon"><img class="input-form-icon" src="images/user.png"></span>
+                        <input class="input-box form-control" type="textbox" placeholder="Họ và tên" id="name" name="name" title="Vui lòng nhập họ và tên">
+                    </div>
+                   
+                    <div form="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <span class="input-icon"><img class="input-form-icon" src="images/email.png"></span>
+                        <input class="input-box form-control" type="email" placeholder="Email" id="email" name="email" title="Vui lòng nhập email">
+                    </div>
+                   
+                    <div form="form-group">
+                        <label for="phone-number" class="form-label">Số điện thoại</label>
+                        <span class="input-icon"><img class="input-form-icon" src="images/phone.png"></span>
+                        <input class="input-box form-control" type="textbox" placeholder="Số điện thoại" id="phone-number" name="phoneNumber" title="Vui lòng nhập số điện thoại">
+                    </div>
+    
+                    <div form="form-group">
+                        <label for="birth-day" class="form-label">Ngày sinh</label>
+                        <input class="input-box form-control" type="date" id="birth-day" name="birthDay" title="Vui lòng nhập ngày sinh">
+                    </div>
+                    <div form="form-group">
+                        <label class="form-label">Giới tính</label>
+                        <div class="genderOp">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio"  name="gender" value="male" required>
+                                <label class="form-check-lable" for="male">Nam</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio"  name="gender" value="female" required>
+                                <label class="form-check-lable" for="female">Nữ</label>
+                            </div>
                         </div>
                     </div>
-                    <label for="password" class="form-label">Mật khẩu</label>
-                    <span class="input-icon"><img class="input-form-icon" src="images/lock.png"></span>
-                    <input class="input-box form-control " type="password" placeholder="Mật khẩu" id="password" name="password" title="Vui lòng nhập mật khẩu">
-                    <label for="urs-name" class="form-label">Nhập lại mật khẩu</label>
-                    <span class="input-icon"><img class="input-form-icon" src="images/lock.png"></span>
-                    <input class="input-box form-control " type="textbox" placeholder="Nhập lại mật khẩu" id="confirm-password" name="confirmPassword" title="Vui lòng nhập lại mật khẩu">
+                    
+                    <div class="form-group">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <span class="input-icon"><img class="input-form-icon" src="images/lock.png"></span>
+                        <input class="input-box form-control " type="password" placeholder="Mật khẩu" id="password" name="password" title="Vui lòng nhập mật khẩu">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urs-name" class="form-label">Nhập lại mật khẩu</label>
+                        <span class="input-icon"><img class="input-form-icon" src="images/lock.png"></span>
+                        <input class="input-box form-control " type="textbox" placeholder="Nhập lại mật khẩu" id="confirm-password" name="confirmPassword" title="Vui lòng nhập lại mật khẩu">
+                    </div>
+
+                    <div class="d-grid m-4">
+                        <button type="submit" class="btn btn-dark">Đăng ký</button>
+                    </div>
+
                 </form>
-                <div class="d-grid m-4">
-                    <button type="submit" class="btn btn-dark">Đăng ký</button>
-                </div>
+                
                 <div class="alr-have-acc">
                     <p class="text-center">Đã có tài khoản? <a href="./login.html">Đăng nhập</a></p>
                 </div>
