@@ -18,7 +18,7 @@ h1 {
 
 
 .container {
-    
+
     margin: 0 auto;
     padding: 20px;
 }
@@ -53,8 +53,8 @@ h1 {
 
 #header .navbar ul li {
     display: inline;
-    
-    
+
+
 }
 
 
@@ -82,23 +82,25 @@ h1 {
 
 @media (min-width: 520px) and (max-width: 1000px) {
     #header .container {
-        flex-direction: column; 
+        flex-direction: column;
     }
+
     #header .navbar ul {
         margin: 0 auto;
         padding: 0;
         display: grid;
-        
+
         gap: 3%;
         width: 90%;
     }
 
     #header .navbar ul li {
-        
+
         margin: 0 auto;
         text-align: center;
-        
+
     }
+
     #header .navbar ul li a {
         display: block;
         padding: 5px 10px;
@@ -111,6 +113,7 @@ h1 {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 @media (min-width: 520px) and (max-width: 767px) {
     #header .navbar ul {
         grid-template-columns: repeat(3, 1fr);
@@ -119,10 +122,11 @@ h1 {
 
 
 
-@media  (max-width: 519px) {
+@media (max-width: 519px) {
     #header .container {
-        flex-direction: column; 
+        flex-direction: column;
     }
+
     #header .navbar ul {
         margin: 0;
         padding: 0;
@@ -134,17 +138,18 @@ h1 {
 
     #header .navbar ul li {
         margin: 0;
-        
+
         text-align: center;
         display: block;
-      
-        
+
+
     }
+
     #header .navbar ul li a {
         display: block;
         padding: 10px 0;
     }
-    
+
 }
 
 
@@ -286,7 +291,7 @@ h1 {
         grid-template-columns: 15% 70% 15%;
     }
 
- 
+
 
     .ads-sidebar div {
         flex-direction: column;
@@ -299,58 +304,72 @@ h1 {
 }
 
 
-/* register */
-/* #nav:hover {
-    border-style: solid;
-    border-color: aqua;
-    box-shadow: 0 0 aqua;
-    padding: 3px;
-    border-radius: 3px;
-
-} */
-
-@media (min-width: 1024px) {
-
-    #reg-form {
-        max-width: 500px;
-        margin: 5% auto;
-    }
+/* register + login */
+.form-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (min-width: 740px) and (max-width:1024px) {
-
-    #reg-form {
-        margin: 10% auto;
-        max-width: 480px;
-    }
-
+.form-container {
+    position: relative;
+    width: 500px;
+    height: auto;
+    background-color: #E0FFFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 740px) {
-    #reg-form {
-        margin: auto 30px !important;
-    }
+.form-box {
+    width: 100%;
+    padding: 40px;
 }
 
-#reg-form {
-    padding: 30px;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
+.form-box h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
 }
 
-#form-title {
-    margin: 20px 0px 10px 0px;
-    text-transform: uppercase;
+.input-form-icon {
+    width: 1em;
+    height: 1em;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10%;
+}
+
+.alr-have-acc p a {
+    color: blue;
     font-weight: bold;
-    font-size: 20px
+    text-decoration: none;
 }
 
+.alr-have-acc p a:hover {
+    text-decoration: underline;
+}
 
 .genderOp {
     display: flex;
     gap: 20px;
 }
+
+.login {
+    margin: 5% 0;
+}
+
+@media (max-width: 740px) {
+    .form-container {
+        margin: 0 30px;
+    }
+}
+
+
 
 
 
@@ -368,7 +387,7 @@ h1 {
         height: 230px;
     }
 
-    .aSectionPhim{
+    .aSectionPhim {
         display: inline-block;
     }
 
@@ -377,43 +396,43 @@ h1 {
         width: 147px;
         border-radius: 10%;
     }
-     
+
     #div_ContentAndImgProduct {
         display: inline-block;
         text-align: center;
     }
-    
+
     #main_Product {
         width: 100%;
     }
-    
-    #body_Product{
+
+    #body_Product {
         background-color: rgba(73, 14, 14, 0.158);
     }
-    
+
     #body_Product table {
         display: none;
     }
-    
+
     .div_Content {
         padding-top: 5px;
         height: 20px;
         width: 200px;
     }
 
-    #div_Content td{
+    #div_Content td {
         font-size: 10px;
     }
-    
-    .name_movie{
+
+    .name_movie {
         height: 80px;
         width: 50px;
         font-size: 15px;
         display: inline;
         color: rgb(39, 8, 8);
     }
-    
-    #TieuDe{
+
+    #TieuDe {
         font-size: 40px;
         margin-bottom: 30px;
         color: white;
@@ -421,23 +440,23 @@ h1 {
         border-bottom: solid black;
         margin: 10px;
     }
-    
-    .div_Icon{
+
+    .div_Icon {
         height: 0px;
         width: 0px;
         position: absolute;
         bottom: 2%;
         display: none;
     }
-    
-    .Heart{
+
+    .Heart {
         position: relative;
         color: black;
         right: 5%;
         font-size: 25px;
     }
-    
-    .Cart{
+
+    .Cart {
         position: relative;
         left: 120px;
         color: rgb(165, 112, 27);
@@ -446,32 +465,34 @@ h1 {
 
 
 
-    #choose_type{
+    #choose_type {
         text-align: center;
         margin: 10px;
     }
 
-    #The_Loai{
+    #The_Loai {
         height: 30px;
         width: 120px;
         border-radius: 5%;
     }
 
-    #thoi_luong{
+    #thoi_luong {
         height: 30px;
         width: 160px;
         border-radius: 5%;
     }
-    #aside{
+
+    #aside {
         display: none;
     }
-    .displayinMobile{
+
+    .displayinMobile {
         display: none;
     }
 }
 
 
-@media (min-width:600px){
+@media (min-width:600px) {
     .phim_Product {
         display: inline-block;
         margin-bottom: 5px;
@@ -480,6 +501,7 @@ h1 {
         width: 230px;
         height: 250px;
     }
+
     .img_Product {
         border: solid black 5px;
         border-radius: 5%;
@@ -489,58 +511,62 @@ h1 {
         margin: 5% auto;
         object-fit: cover;
     }
-    .aSectionPhim{
+
+    .aSectionPhim {
         border: solid black 2px;
         border-radius: 8%;
         display: inline-block;
         margin: 5px;
         background-color: rgb(215, 200, 200);
     }
-    #main_Product img{
+
+    #main_Product img {
         transition: transform 0.3s ease;
     }
-    
-    #main_Product img:hover{
+
+    #main_Product img:hover {
         transform: scale(1.05);
     }
-    
+
     #div_ContentAndImgProduct {
         display: inline-block;
         text-align: center;
         grid-area: center;
     }
-    #aside{
+
+    #aside {
         grid-area: right;
     }
-    
-    #choose_type{
+
+    #choose_type {
         grid-area: left;
     }
+
     #main_Product {
         /* width: 90%; */
         display: grid;
         grid-template-areas:
-        "left center right";
+            "left center right";
         grid-template-columns: 20% 75% 5%;
     }
-    
-    #body_Product{
-        background-color:rgba(73, 14, 14, 0.158);
+
+    #body_Product {
+        background-color: rgba(73, 14, 14, 0.158);
     }
-    
+
     #body_Product td {
         text-align: left;
         font-size: 15px;
     }
-    
+
     .div_Content {
         height: 150px;
         width: 230px;
         padding-left: 5%;
     }
 
-    
-    .name_movie{
+
+    .name_movie {
         display: inline;
         color: rgb(39, 8, 8);
         font-size: 22px;
@@ -549,28 +575,28 @@ h1 {
         width: 100%;
         display: inline-block;
     }
-    
-    #TieuDe{
+
+    #TieuDe {
         font-size: 50px;
         margin-bottom: 30px;
         font-weight: 10;
         border-bottom: solid black;
 
     }
-    
-    .div_Icon{
+
+    .div_Icon {
         position: relative;
         bottom: 8px;
     }
-    
-    .Heart{
+
+    .Heart {
         position: relative;
         right: 25%;
         color: black;
         font-size: 35px;
     }
-    
-    .Cart{
+
+    .Cart {
         position: relative;
         left: 25%;
         color: rgb(165, 112, 27);
@@ -578,7 +604,7 @@ h1 {
     }
 
 
-    #The_Loai{
+    #The_Loai {
         width: 65%;
         height: 40px;
         margin-top: 70px;
@@ -590,7 +616,8 @@ h1 {
         display: block;
         text-align: center;
     }
-    #thoi_luong{
+
+    #thoi_luong {
         width: 65%;
         height: 40px;
         font-size: 18px;
@@ -601,7 +628,7 @@ h1 {
         display: block;
     }
 
-    #Chon{
+    #Chon {
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
@@ -613,8 +640,8 @@ h1 {
         font-weight: 500;
         display: block;
     }
-    
-    #BoLoc{
+
+    #BoLoc {
         padding-top: 25px;
         border-radius: 10%;
         color: rgb(0, 0, 0);
@@ -628,73 +655,86 @@ h1 {
         height: 500px;
     }
 }
+
 /* about */
-#gioithieu{
+#gioithieu {
     max-width: 1024px;
     margin: auto;
 }
-.box{
+
+.box {
     padding: 20px;
     max-width: 100%;
     display: flex;
     justify-items: center;
     margin: auto;
 }
+
 .text_gioithieu {
     text-indent: 30px;
     padding: 20px;
     font-size: 25px;
     text-align: justify;
 }
+
 #video_gioithieu {
     width: 100%;
     border-radius: 5px;
     aspect-ratio: 16/9;
 }
+
 @media (max-width: 600px) {
     .box {
         padding: 5px;
     }
 }
-.container_gallery{
+
+.container_gallery {
     display: grid;
-    grid-template-areas:"topleft topright"
-                        "botleft botright";
+    grid-template-areas: "topleft topright"
+        "botleft botright";
     justify-items: center;
     gap: 10px;
 
-    }
-@media (max-width: 400px){
-    .container_gallery{
-        grid-template-areas:"topleft"
-                            "topright"
-                            "botleft"
-                            "botright";
+}
+
+@media (max-width: 400px) {
+    .container_gallery {
+        grid-template-areas: "topleft"
+            "topright"
+            "botleft"
+            "botright";
     }
 }
-.image1{
+
+.image1 {
     width: 100%;
     border-radius: 5px;
     grid-area: topleft;
 }
-.image2{
+
+.image2 {
     width: 100%;
     border-radius: 5px;
     grid-area: topright;
 }
-.image3{
-    width: 100%;    
+
+.image3 {
+    width: 100%;
     border-radius: 5px;
     grid-area: botleft;
 }
-.image4{
+
+.image4 {
     width: 100%;
     border-radius: 5px;
     grid-area: botright;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
+
 /* .fa-star{
     color: blue;
     animation: rotate 2s linear infinite;
@@ -707,10 +747,18 @@ ul{
     display: inline-block;
     font-size: 30px;
     animation: led_rgb 3s infinite alternate;
-  }
-  
-  @keyframes led_rgb {
-    0% { color: red; }
-    50% { color: green; }
-    100% { color: blue; }
-  }
+}
+
+@keyframes led_rgb {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: green;
+    }
+
+    100% {
+        color: blue;
+    }
+}
