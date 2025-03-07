@@ -165,7 +165,10 @@ h1 {
 @media (max-width: 768px) {
     #header .navbar ul {
         grid-template-columns: repeat(1, 1fr);
+        border: 1px solid #e3d9d9;
+        border-radius: 5px;
     }
+
 }
 
 
