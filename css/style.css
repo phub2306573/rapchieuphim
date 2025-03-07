@@ -131,7 +131,7 @@ h1 {
         margin: 0;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
 
     }
@@ -315,7 +315,7 @@ h1 {
     position: relative;
     width: 500px;
     height: auto;
-    background-color: #E0FFFF;
+    background-color: #f5f5f5;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .5);
     border-radius: 15px;
     display: flex;
@@ -345,7 +345,7 @@ h1 {
 }
 
 .alr-have-acc p a {
-    color: blue;
+    color: rgb(32, 32, 32);
     font-weight: bold;
     text-decoration: none;
 }
