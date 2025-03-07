@@ -662,6 +662,13 @@ h1 {
     margin: auto;
 }
 
+#gioithieu h1 {
+    color: black;
+    text-align: left;
+    font-size: 40px;
+    margin: 20px;
+}
+
 .box {
     padding: 20px;
     max-width: 100%;
@@ -708,24 +715,28 @@ h1 {
 }
 
 .image1 {
+    box-shadow: 5px 5px #cabfbf;
     width: 100%;
     border-radius: 5px;
     grid-area: topleft;
 }
 
 .image2 {
+    box-shadow: 5px 5px #cabfbf;
     width: 100%;
     border-radius: 5px;
     grid-area: topright;
 }
 
 .image3 {
+    box-shadow: 5px 5px #cabfbf;
     width: 100%;
     border-radius: 5px;
     grid-area: botleft;
 }
 
 .image4 {
+    box-shadow: 5px 5px #cabfbf;
     width: 100%;
     border-radius: 5px;
     grid-area: botright;
@@ -736,7 +747,6 @@ ul {
 }
 
 /* .fa-star{
-    color: blue;
     animation: rotate 2s linear infinite;
 }
 @keyframes rotate {
@@ -745,8 +755,8 @@ ul {
 } */
 .fa-star {
     display: inline-block;
-    font-size: 30px;
-    animation: led_rgb 3s infinite alternate;
+    font-size: 25px;
+    animation: led_rgb 2s infinite alternate;
 }
 
 @keyframes led_rgb {
