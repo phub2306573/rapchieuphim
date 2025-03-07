@@ -467,7 +467,7 @@ h1 {
 
     #choose_type {
         text-align: center;
-        margin: 10px;
+        /* margin: 10px; */
     }
 
     #The_Loai {
@@ -547,7 +547,7 @@ h1 {
         display: grid;
         grid-template-areas:
             "left center right";
-        grid-template-columns: 20% 75% 5%;
+        grid-template-columns: 10% 80% 10%;
     }
 
     #body_Product {
@@ -605,7 +605,7 @@ h1 {
 
 
     #The_Loai {
-        width: 65%;
+        width: 20%;
         height: 40px;
         margin-top: 70px;
         margin-left: auto;
@@ -613,48 +613,40 @@ h1 {
         font-size: 18px;
         margin-bottom: 10px;
         border-radius: 5%;
-        display: block;
+        display: inline;
         text-align: center;
     }
 
     #thoi_luong {
-        width: 65%;
+        width: 20%;
         height: 40px;
         font-size: 18px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 5%;
         text-align: center;
-        display: block;
+        display: inline;
     }
 
     #Chon {
-        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
-        height: 50px;
+        height: 40px;
         width: 50px;
-        border-radius: 25%;
-        border: solid 1px black;
+        border-radius: 5%;
         font-size: 15px;
         font-weight: 500;
-        display: block;
+        display: inline-block;
     }
 
     #BoLoc {
-        padding-top: 25px;
-        border-radius: 10%;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        font-size: 25px;
-        background-color: #ffffff;
-        position: relative;
-        left: 15%;
-        top: 50px;
-        width: 80%;
-        height: 500px;
+        margin-bottom: 25px;
     }
 }
+
+
+
+
 
 /* about */
 #gioithieu {

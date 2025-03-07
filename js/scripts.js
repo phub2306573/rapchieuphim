@@ -2,7 +2,14 @@
 
 function changeHeartColor(index){
     let a = document.getElementsByClassName("Heart");
-    a[index].style.color = "red";
+    if(a[index].value == 0){
+        a[index].style.color = "red";
+        a[index].value = 1;
+    }
+    else{
+        a[index].style.color = "black";
+        a[index].value = 0;
+    }
 }
 
 
@@ -18,7 +25,7 @@ function selectTypeOfFilm(){
     let valueOfThoiLuong = c.value;
     console.log(valueOfTheLoai);
     console.log(valueOfThoiLuong);
-
+    let count = 0;
     for(i = 0;i<a.length;i++){
         let temp = a[i].classList;
         let DK_1 = false,DK_2=false;
@@ -34,8 +41,15 @@ function selectTypeOfFilm(){
             }
             if(DK_1 && DK_2){
                 a[i].style.display = "";
+                count++;
             }
         }
 
+    }
+    if(count == 0){
+        alert("Xin Lỗi Phim Theo Yêu Cầu Của Bạn Hiện Đang Không Có");
+        for(i = 0;i<a.length;i++){
+            a[i].style.display = "";
+        }
     }
 }
