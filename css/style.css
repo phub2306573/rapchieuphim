@@ -429,14 +429,12 @@ h1 {
         background-color: rgba(73, 14, 14, 0.158);
     }
 
-    #body_Product table {
-        display: none;
-    }
 
     .div_Content {
         padding-top: 5px;
         height: 20px;
         width: 200px;
+        display: none;
     }
 
     #div_Content td {
@@ -461,8 +459,6 @@ h1 {
     }
 
     .div_Icon {
-        height: 0px;
-        width: 0px;
         position: absolute;
         bottom: 2%;
         display: none;
@@ -504,9 +500,8 @@ h1 {
     #aside {
         display: none;
     }
-
-    .displayinMobile {
-        display: none;
+    #BoLoc{
+        margin: 10px;
     }
 }
 
