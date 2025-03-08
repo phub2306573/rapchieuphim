@@ -16,6 +16,14 @@ h1 {
     font-weight: bold;
 }
 
+
+
+hr {
+    border: 2px solid #333;
+    margin: 20px 0;
+}
+
+
 .container {
 
     margin: 0;
@@ -84,6 +92,7 @@ h1 {
 
 
 
+
 #header .navbar ul {
     margin-bottom: 0;
 }
@@ -120,7 +129,7 @@ h1 {
     padding: 20px 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     #header .container {
         flex-direction: column;
     }
@@ -129,7 +138,7 @@ h1 {
         margin: 0;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+       
         width: 100%;
 
     }
@@ -154,7 +163,9 @@ h1 {
 @media (min-width: 769px) {
     .container{
         margin: 0 auto;
+        max-width: 80%;
     }
+
 }
 @media (min-width: 576px) and (max-width: 768px) {
     .container {
@@ -163,7 +174,7 @@ h1 {
 }
 
 
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     #header .navbar ul {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -182,6 +193,7 @@ h1 {
 
 
 .featured-movies,
+.showing-now
 .about-us,
 .product-list,
 .cart,
@@ -294,6 +306,11 @@ h1 {
 
 }
 
+.showing-now {
+    grid-area: showing-now;
+
+}
+
 .ads-sidebar {
     grid-area: ads-sidebar;
 
@@ -321,7 +338,9 @@ h1 {
     #trangchu #main-content {
         display: grid;
         grid-template-areas: "hero hero hero"
-            "left-aside featured-movies ads-sidebar";
+            "left-aside featured-movies ads-sidebar"
+            "left-aside showing-now ads-sidebar";
+
         grid-template-columns: 15% 70% 15%;
     }
 
