@@ -16,12 +16,12 @@ h1 {
     font-weight: bold;
 }
 
-
 .container {
 
-    margin: 0 auto;
+    margin: 0;
     padding: 20px;
 }
+
 
 #header {
 
@@ -76,13 +76,11 @@ h1 {
     
     .navbar.active {
         display: block;
+        
     }
-    
-    
     
    
 }
-
 
 
 
@@ -153,7 +151,16 @@ h1 {
 
 }
 
-
+@media (min-width: 769px) {
+    .container{
+        margin: 0 auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .container {
+        max-width: initial;
+    }
+}
 
 
 @media (min-width: 769px) and (max-width: 1000px) {
@@ -183,6 +190,14 @@ h1 {
 .contact {
     padding: 20px 0;
 }
+
+
+.movie-list{
+    text-align: center;
+    
+}
+
+
 
 #footer {
     background: #333;
@@ -305,7 +320,7 @@ h1 {
 
     #trangchu #main-content {
         display: grid;
-        grid-template-areas: "left-aside hero ads-sidebar"
+        grid-template-areas: "hero hero hero"
             "left-aside featured-movies ads-sidebar";
         grid-template-columns: 15% 70% 15%;
     }
@@ -321,6 +336,9 @@ h1 {
     }
 
 }
+
+
+
 
 
 /* register + login */
@@ -394,7 +412,7 @@ h1 {
 
 /* product */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .phim_Product {
         display: inline-block;
         margin-bottom: 5px;
@@ -488,13 +506,21 @@ h1 {
     #The_Loai {
         height: 30px;
         width: 120px;
-        border-radius: 5%;
+        border: 1px solid #9f9f9f;
+        border-radius: 5px;
     }
 
     #thoi_luong {
         height: 30px;
         width: 160px;
-        border-radius: 5%;
+        border: 1px solid #9f9f9f;
+        border-radius: 5px;
+    }
+    #Chon {
+        height: 31px;
+        border: 1px solid #9f9f9f;
+        border-radius: 5px;
+        background-color: white;
     }
 
     #aside {
@@ -506,7 +532,7 @@ h1 {
 }
 
 
-@media (min-width:600px) {
+@media (min-width:769px) {
     .phim_Product {
         display: inline-block;
         margin-bottom: 5px;
@@ -528,9 +554,10 @@ h1 {
 
     .aSectionPhim {
         border: solid black 2px;
-        border-radius: 8%;
+        border-radius: 20px;
         display: inline-block;
-        margin: 5px;
+        margin: 5px 5px 15px;
+
         background-color: rgb(215, 200, 200);
     }
 
@@ -557,7 +584,7 @@ h1 {
     }
 
     #main_Product {
-        /* width: 90%; */
+      
         display: grid;
         grid-template-areas:
             "left center right";
@@ -568,13 +595,13 @@ h1 {
         background-color: rgba(73, 14, 14, 0.158);
     }
 
-    #body_Product td {
+    .div_Content td {
         text-align: left;
         font-size: 15px;
     }
 
     .div_Content {
-        height: 150px;
+        height: 100px;
         width: 230px;
         padding-left: 5%;
     }
@@ -591,10 +618,11 @@ h1 {
     }
 
     #TieuDe {
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 30px;
-        font-weight: 10;
+        font-weight: bold;
         border-bottom: solid black;
+        text-align: left;
 
     }
 
@@ -619,38 +647,39 @@ h1 {
 
 
     #The_Loai {
-        width: 20%;
+        width: 15%;
+        min-width: 150px;
         height: 40px;
-        margin-top: 70px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         font-size: 18px;
-        margin-bottom: 10px;
-        border-radius: 5%;
+        border: 1px solid #9f9f9f;
+        border-radius: 5px;
         display: inline;
         text-align: center;
     }
 
     #thoi_luong {
-        width: 20%;
+        width: 15%;
+        min-width: 150px;
         height: 40px;
         font-size: 18px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 5%;
+        margin: 0 auto;
+        border: 1px solid #9f9f9f;
+        border-radius: 5px;
         text-align: center;
         display: inline;
     }
 
     #Chon {
-        margin-left: auto;
-        margin-right: auto;
-        height: 40px;
-        width: 50px;
-        border-radius: 5%;
-        font-size: 15px;
+        margin: 0 auto;
+        height: 41px;
+        width: 80px;
+        border: 1px solid #9f9f9f;
+        border-radius: 5px;
+        font-size: 18px;
         font-weight: 500;
         display: inline-block;
+        background-color: white;
     }
 
     #BoLoc {
@@ -686,7 +715,7 @@ h1 {
 .text_gioithieu {
     text-indent: 30px;
     padding: 20px;
-    font-size: 25px;
+    font-size: 16px;
     text-align: justify;
 }
 
