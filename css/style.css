@@ -571,19 +571,18 @@ hr {
         margin-bottom: 5px;
         margin-top: 2px;
         border-radius: 8%;
-        width: 230px;
-        height: 250px;
     }
 
     .img_Product {
         border: solid black 5px;
         border-radius: 5%;
-        height: 90%;
-        width: 80%;
+        width: 200px;
+        height: 230px;
         display: block;
         margin: 5% auto;
         object-fit: cover;
     }
+
 
     .aSectionPhim {
         border: solid black 2px;
