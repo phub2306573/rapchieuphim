@@ -65,68 +65,6 @@ function selectTypeOfFilm() {
     }
 }
 
-function change_DivContent(i) {
-    let div_Content = document.getElementsByClassName("div_Content");
-    let td = document.getElementsByTagName("td");
-    div_Content[i].style.display = "inline";
-    console.log(td[i]);
-    td[i].style.width = "300px";
-}
-function change_imgandcontent() {
-    let a = document.getElementById("div_ContentAndImgProduct");
-    a.style.width = "100%";
-}
-
-function change_Div_Icon(i) {
-    let div_Icon = document.getElementsByClassName("div_Icon");
-    div_Icon[i].style.display = "flex";
-    div_Icon[i].style.position = "relative";
-    div_Icon[i].style.bottom = "8px";
-}
-
-function change_chooseType() {
-    let a = document.getElementById("BoLoc");
-    a.style.display = "none";
-}
-
-function change_imgProduct(i) {
-    let a = document.getElementsByClassName("img_Product");
-    a[i].style.height = "300px";
-    a[i].style.width = "280px";
-}
-
-function changeFilm_Product(i) {
-    let a = document.getElementsByClassName("phim_Product");
-    let b = document.getElementsByClassName("name_movie");
-    b[i].style.display = "inline-block";
-    b[i].style.position = "absolute";
-    b[i].style.marginLeft = "10px";
-    b[i].style.fontSize = "20px";
-    a[i].style.width = "100%";
-    a[i].style.height = "100%";
-    a[i].style.position = "block";
-    a[i].style.fontsize = "25px";
-}
-
-function MobileGetTicket(index) {
-    var screenWidth = window.innerWidth;
-    if (screenWidth > 600) return;
-    let a = document.getElementsByClassName("aSectionPhim");
-    let i = 0;
-    console.log("ssfsfs");
-    for (i = 0; i < a.length; i++) {
-        if (i == index) {
-            change_DivContent(i);
-            change_Div_Icon(i);
-            change_chooseType();
-            console.log("hello");
-            change_imgProduct(i);
-            changeFilm_Product(i);
-            continue;
-        }
-        a[i].style.display = "none";
-    }
-}
 
 // Validate 
 function isNumber(event) {
@@ -135,3 +73,6 @@ function isNumber(event) {
         return false;
     return true;
 }
+
+
+
