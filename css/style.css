@@ -303,17 +303,17 @@ hr {
 
 .featured-movies {
     grid-area: featured-movies;
-
+    padding: 20px;
 }
 
 .showing-now {
     grid-area: showing-now;
-
+    padding: 20px;
 }
 
 .ads-sidebar {
     grid-area: ads-sidebar;
-
+    padding: 20px;
 
 }
 
@@ -344,7 +344,21 @@ hr {
         grid-template-columns: 15% 70% 15%;
     }
 
-
+    .featured-movies {
+        grid-area: featured-movies;
+        padding: 0 20px;
+    }
+    
+    .showing-now {
+        grid-area: showing-now;
+        padding: 0 20px;
+    }
+    
+    .ads-sidebar {
+        grid-area: ads-sidebar;
+        padding: 0 20px;
+    
+    }
 
     .ads-sidebar div {
         flex-direction: column;
