@@ -850,18 +850,20 @@ ul {
 }
 
 #lienhe h1 {
+    color: black;
     text-align: left;
     font-size: 40px;
-    padding-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .dau_lienhe {
-    font-size: 40px;
+    font-size: 25px;
     border-bottom: #241e1e solid 2px;
 }
 
 .noidung_lienhe {
-    font-size: 20px;
+    font-size: 16px;
 
 }
 
@@ -871,7 +873,7 @@ ul {
 }
 
 .form_feedback {
-    font-size: 20px;
+    font-size: 16px;
     grid-area: right;
 }
 
@@ -883,7 +885,7 @@ ul {
 }
 
 .form_table {
-    width: 100%;
+    width: 90%;
     box-shadow: #746f6f 1px 1px 10px;
     border-radius: 10px;
 }
