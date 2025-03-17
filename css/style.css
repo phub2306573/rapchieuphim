@@ -124,6 +124,12 @@ hr {
 }
 
 
+#header .navbar ul li a.active {
+    background: #cac8c8;
+    color: #241e1e;
+}
+
+
 
 #main-content {
     padding: 20px 0;
@@ -279,26 +285,6 @@ hr {
 
 
 
-.Horizontal-Scroll-Bar {
-
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-
-
-}
-
-
-.poster {
-
-    width: 100%;
-    height: auto;
-    background-color: lightblue;
-    margin: 10px;
-    display: inline-block;
-
-
-}
 
 
 .featured-movies {
@@ -503,6 +489,7 @@ hr {
     #TieuDe {
         font-size: 40px;
         margin-bottom: 30px;
+        
         color: white;
         background-color: black;
         border-bottom: solid black;
@@ -655,6 +642,7 @@ hr {
         font-weight: bold;
         border-bottom: solid black;
         text-align: left;
+        margin-top: 20px;
 
     }
 
