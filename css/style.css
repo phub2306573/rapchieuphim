@@ -67,6 +67,48 @@ hr {
     justify-content: space-between;
 
 }
+
+
+
+#header .navbar ul {
+    margin-bottom: 0;
+
+}
+
+#header .navbar ul li {
+    display: inline;
+    
+
+}
+
+
+#header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-weight: bold;
+    align-content: center;
+
+}
+
+#header .navbar ul li a:hover {
+    background: #cac8c8;
+    transition: all 0.3s ease-out;
+    transform: scale(1.01);
+    color: #241e1e;
+}
+
+
+#header .navbar ul li a.active {
+    background: #cac8c8;
+    color: #241e1e;
+    transform: scale(1.01);
+}
+
+
+
 @media  (min-width: 769px) {
     .logo img {
         display: none;
@@ -83,6 +125,9 @@ hr {
     }
     
     .navbar.active {
+        display: block; 
+    }
+    .navbar ul li a {
         display: block;
         
     }
@@ -93,48 +138,6 @@ hr {
 
 
 
-#header .navbar ul {
-    margin-bottom: 0;
-}
-
-#header .navbar ul li {
-    display: inline;
-    
-
-}
-
-
-#header .navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #333;
-    border-radius: 5px;
-    font-weight: bold;
-
-}
-
-#header .navbar ul li a:hover {
-    background: #cac8c8;
-    transition: all 0.3s ease-out;
-    transform: scale(1.02);
-    color: #241e1e;
-}
-
-
-#header .navbar ul li a.active {
-    background: #cac8c8;
-    color: #241e1e;
-}
-
-
-
-#main-content {
-    padding: 20px 0;
-}
-
 @media (max-width: 1200px) {
     #header .container {
         flex-direction: column;
@@ -144,7 +147,6 @@ hr {
         margin: 0;
         padding: 0;
         display: grid;
-       
         width: 100%;
 
     }
@@ -154,13 +156,13 @@ hr {
 
         text-align: center;
         display: block;
-
+        margin: 2px 3px;
 
     }
 
     #header .navbar ul li a {
         display: block;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
 
@@ -197,6 +199,11 @@ hr {
 
 
 
+
+
+#main-content {
+    padding: 20px 0;
+}
 
 .featured-movies,
 .showing-now
