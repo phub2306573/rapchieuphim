@@ -12,100 +12,100 @@ function toggleMenu() {
 //Product js
 
 let sectionFilm = {
-    "phim_1":{
-        "id":"A1",
-        "Name":"Na Tra Ma Đồng Giáng Thế",
+    "phim_1": {
+        "id": "A1",
+        "Name": "Na Tra Ma Đồng Giáng Thế",
         "Price": "99k",
-        "Photo":"/images/phim1.jpg"
+        "Photo": "/images/phim1.jpg"
     },
-    "phim_2":{
-        "id":"A2",
-        "Name":"Nobita's Sky Utopia in Hindi",
+    "phim_2": {
+        "id": "A2",
+        "Name": "Nobita's Sky Utopia in Hindi",
         "Price": "105k",
-        "Photo":"/images/phim2.jpg"
+        "Photo": "/images/phim2.jpg"
     },
-    "phim_3":{
-        "id":"A3",
-        "Name":"Đào, phở và piano",
+    "phim_3": {
+        "id": "A3",
+        "Name": "Đào, phở và piano",
         "Price": "99k",
-        "Photo":"/images/phim3.jpg"
+        "Photo": "/images/phim3.jpg"
     },
-    "phim_4":{
-        "id":"A4",
-        "Name":"Nữ Tu Bóng Tối",
+    "phim_4": {
+        "id": "A4",
+        "Name": "Nữ Tu Bóng Tối",
         "Price": "99k",
-        "Photo":"/images/phim4.jpg"
+        "Photo": "/images/phim4.jpg"
     },
-    "phim_5":{
-        "id":"A5",
-        "Name":"Cá Sấu Tử Thần",
+    "phim_5": {
+        "id": "A5",
+        "Name": "Cá Sấu Tử Thần",
         "Price": "99k",
-        "Photo":"/images/phim5.jpg"
+        "Photo": "/images/phim5.jpg"
     },
-    "phim_6":{
-        "id":"A6",
-        "Name":"Kẻ Ăn Hồn",
+    "phim_6": {
+        "id": "A6",
+        "Name": "Kẻ Ăn Hồn",
         "Price": "99k",
-        "Photo":"/images/phim6.jpg"
+        "Photo": "/images/phim6.jpg"
     },
-    "phim_7":{
-        "id":"A7",
-        "Name":"Breaking Bad",
+    "phim_7": {
+        "id": "A7",
+        "Name": "Breaking Bad",
         "Price": "99k",
-        "Photo":"/images/phim7.jpg"
+        "Photo": "/images/phim7.jpg"
     },
-    "phim_8":{
-        "id":"A8",
-        "Name":"Cuộc Đào Tẩu Trên Không",
+    "phim_8": {
+        "id": "A8",
+        "Name": "Cuộc Đào Tẩu Trên Không",
         "Price": "99k",
-        "Photo":"/images/phim8.jpg"
+        "Photo": "/images/phim8.jpg"
     },
-    "phim_9":{
-        "id":"A9",
-        "Name":"Shin Cậu Bé Bút Chì",
+    "phim_9": {
+        "id": "A9",
+        "Name": "Shin Cậu Bé Bút Chì",
         "Price": "99k",
-        "Photo":"/images/phim9.jpg"
+        "Photo": "/images/phim9.jpg"
     },
-    "phim_10":{
-        "id":"A10",
-        "Name":"Quỷ Nhập Tràng",
+    "phim_10": {
+        "id": "A10",
+        "Name": "Quỷ Nhập Tràng",
         "Price": "99k",
-        "Photo":"/images/phim10.jpg"
+        "Photo": "/images/phim10.jpg"
     },
-    "phim_11":{
-        "id":"A11",
-        "Name":"Nàng Bạch Tuyết",
+    "phim_11": {
+        "id": "A11",
+        "Name": "Nàng Bạch Tuyết",
         "Price": "99k",
-        "Photo":"/images/phim11.jpg"
+        "Photo": "/images/phim11.jpg"
     },
-    "phim_12":{
-        "id":"A2",
-        "Name":"Venom The Last Dance",
+    "phim_12": {
+        "id": "A2",
+        "Name": "Venom The Last Dance",
         "Price": "99k",
-        "Photo":"/images/phim12.jpg"
+        "Photo": "/images/phim12.jpg"
     },
-    "phim_13":{
-        "id":"A3",
-        "Name":"Bộ Phim Về MineCraft",
+    "phim_13": {
+        "id": "A3",
+        "Name": "Bộ Phim Về MineCraft",
         "Price": "99k",
-        "Photo":"/images/phim13.jpg"
+        "Photo": "/images/phim13.jpg"
     },
-    "phim_14":{
-        "id":"A14",
-        "Name":"Phim Xì Trum",
+    "phim_14": {
+        "id": "A14",
+        "Name": "Phim Xì Trum",
         "Price": "99k",
-        "Photo":"/images/phim14.jpg"
+        "Photo": "/images/phim14.jpg"
     },
-    "phim_15":{
-        "id":"A15",
-        "Name":"Bí Kiếp Luyện Rồng",
+    "phim_15": {
+        "id": "A15",
+        "Name": "Bí Kiếp Luyện Rồng",
         "Price": "99k",
-        "Photo":"/images/phim15.jpg"
+        "Photo": "/images/phim15.jpg"
     }
 }
 
-for(let i = 0;i<sectionFilm.length;i++){
-    window.localStorage.getItem(i,sectionFilm[i]);
+for (let i = 0; i < sectionFilm.length; i++) {
+    window.localStorage.getItem(i, sectionFilm[i]);
 }
 
 
@@ -116,8 +116,8 @@ console.log(sectionFilm);
 
 
 
-function changeHeartColor(obj){
-    if(obj.style.color == "red") obj.style.color = "black";
+function changeHeartColor(obj) {
+    if (obj.style.color == "red") obj.style.color = "black";
     else obj.style.color = "red";
 }
 
@@ -170,6 +170,38 @@ function isNumber(event) {
     if (key < 48 || key > 57)
         return false;
     return true;
+}
+
+function formValidate() {
+    var form = document.getElementById('frm');
+    var formGroup = form.getElementsByClassName('form-group');
+    var needValidate = [];
+    for (let j = 0; j < formGroup.length; j++) {
+        let inputbox = formGroup[j].getElementsByClassName('input-box');
+        for (let i = 0; i < inputbox.length; i++) {
+            needValidate.push(inputbox[i]);
+        }
+    }
+    for (let i in needValidate) {
+        if (!isRequired(needValidate[i]))
+            return false;
+        else
+            continue;
+
+    }
+
+
+    function isRequired(option) {
+        if (option.value.length == 0) {
+            console.log(option.value)
+            var formMess = option.parentElement.querySelector('.error-mess');
+            formMess.innerText = "*Vui lòng nhập trường này"
+            option.focus();
+            return false;
+        }
+        else return true;
+    }
+
 }
 
 

@@ -49,7 +49,7 @@ hr {
 }
 
 
-#header .logo{
+#header .logo {
     display: flex;
     justify-content: space-between;
 }
@@ -57,7 +57,7 @@ hr {
 #header img {
     width: 36px;
     height: 36px;
-    
+
 }
 
 #header .container {
@@ -77,7 +77,7 @@ hr {
 
 #header .navbar ul li {
     display: inline;
-    
+
 
 }
 
@@ -109,30 +109,32 @@ hr {
 
 
 
-@media  (min-width: 769px) {
+@media (min-width: 769px) {
     .logo img {
         display: none;
-    }   
+    }
 }
 
 
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
     .logo img {
         display: block;
-    }   
+    }
+
     .navbar {
         display: none;
     }
-    
+
     .navbar.active {
-        display: block; 
+        display: block;
     }
+
     .navbar ul li a {
         display: block;
-        
+
     }
-    
-   
+
+
 }
 
 
@@ -169,12 +171,13 @@ hr {
 }
 
 @media (min-width: 769px) {
-    .container{
+    .container {
         margin: 0 auto;
         max-width: 80%;
     }
 
 }
+
 @media (min-width: 576px) and (max-width: 768px) {
     .container {
         max-width: initial;
@@ -206,8 +209,7 @@ hr {
 }
 
 .featured-movies,
-.showing-now
-.about-us,
+.showing-now .about-us,
 .product-list,
 .cart,
 .login,
@@ -217,9 +219,9 @@ hr {
 }
 
 
-.movie-list{
+.movie-list {
     text-align: center;
-    
+
 }
 
 
@@ -270,7 +272,7 @@ hr {
 
 
 @media screen and (min-width: 768px) {
-   
+
     .footer-nav {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -341,16 +343,16 @@ hr {
         grid-area: featured-movies;
         padding: 0 20px;
     }
-    
+
     .showing-now {
         grid-area: showing-now;
         padding: 0 20px;
     }
-    
+
     .ads-sidebar {
         grid-area: ads-sidebar;
         padding: 0 20px;
-    
+
     }
 
     .ads-sidebar div {
@@ -432,7 +434,10 @@ hr {
     }
 }
 
-
+.invalid {
+    border-color: #dc3545;
+    color: #dc3545;
+}
 
 
 
@@ -496,7 +501,7 @@ hr {
     #TieuDe {
         font-size: 40px;
         margin-bottom: 30px;
-        
+
         color: white;
         background-color: black;
         border-bottom: solid black;
@@ -543,6 +548,7 @@ hr {
         border: 1px solid #9f9f9f;
         border-radius: 5px;
     }
+
     #Chon {
         height: 31px;
         border: 1px solid #9f9f9f;
@@ -553,7 +559,8 @@ hr {
     #aside {
         display: none;
     }
-    #BoLoc{
+
+    #BoLoc {
         margin: 10px;
     }
 }
@@ -610,7 +617,7 @@ hr {
     }
 
     #main_Product {
-      
+
         display: grid;
         grid-template-areas:
             "left center right";
@@ -895,9 +902,9 @@ ul {
     padding: 10px;
 }
 
-.button_sub{
+.button_sub {
     background-color: rgb(8, 8, 8);
-    border: none;  
+    border: none;
     color: rgb(255, 255, 255);
     padding: 13px 25px;
     text-align: center;
@@ -909,47 +916,46 @@ ul {
     border-radius: 5px;
 }
 
-.button_sub:hover{
+.button_sub:hover {
     background-color: rgb(94, 94, 94);
     color: rgb(255, 255, 255);
 }
 
 
 /* cart */
-#Cart_left{
+#Cart_left {
     grid-area: Cart_left;
 }
 
-#film_choosed{
+#film_choosed {
     grid-area: phim;
 }
 
-#another_option{
+#another_option {
     text-align: center;
     grid-area: another;
 }
 
 
-#Cart_center{
+#Cart_center {
     background-color: white;
     display: grid;
     grid-area: Cart_center;
     grid-template-areas:
-    "phim another";
+        "phim another";
     grid-template-columns: 40% 60%;
 }
 
-#Cart_right{
+#Cart_right {
     grid-area: Cart_right;
 }
 
-#main_Cart{
+#main_Cart {
     height: 700px;
     display: grid;
     background-color: rgb(236, 231, 231);
     grid-template-areas:
-    "Cart_left Cart_center Cart_right"
+        "Cart_left Cart_center Cart_right"
     ;
     grid-template-columns: 15% 70% 15%;
 }
-
