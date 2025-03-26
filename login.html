@@ -45,8 +45,8 @@
                     <div class="form-group">
                         <label for="email" class="form-label">Tài khoản</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/user.png"></span>
-                        <input class="input-box form-control" type="textbox" placeholder="Email" id="email"
-                            name="email">
+                        <input class="input-box form-control" type="textbox" placeholder="Email" id="email" name="email"
+                            onblur="isRequired(this)">
                         <span class="error-mess"></span>
                     </div>
 
@@ -54,7 +54,7 @@
                         <label for="password" class="form-label">Mật khẩu</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/lock.png"></span>
                         <input class="input-box form-control " type="password" placeholder="Mật khẩu" id="password"
-                            name="password">
+                            name="password" onblur="isRequired(this)">
                         <span class="error-mess"></span>
                     </div>
                     <div class="form-group">

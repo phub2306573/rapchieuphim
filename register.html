@@ -49,14 +49,15 @@
                         <label for="name" class="form-label">Họ và tên</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/user.png"></span>
                         <input class="input-box form-control" type="textbox" placeholder="Họ và tên" id="name"
-                            name="name">
+                            name="name" onblur="isRequired(this)">
                         <span class="error-mess"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/email.png"></span>
-                        <input class="input-box form-control" type="email" placeholder="Email" id="email" name="email">
+                        <input class="input-box form-control" type="email" placeholder="Email" id="email" name="email"
+                            onblur="isRequired(this)">
                         <span class="error-mess"></span>
                     </div>
 
@@ -64,13 +65,15 @@
                         <label for="phone-number" class="form-label">Số điện thoại</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/phone.png"></span>
                         <input class="input-box form-control" type="textbox" placeholder="Số điện thoại"
-                            id="phone-number" name="phoneNumber" onkeypress="return isNumber(event)">
+                            id="phone-number" name="phoneNumber" onkeypress="return isNumber(event)"
+                            onblur="isRequired(this)">
                         <span class="error-mess"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="birth-day" class="form-label">Ngày sinh</label>
-                        <input class="input-box form-control" type="date" id="birth-day" name="birthDay">
+                        <input class="input-box form-control" type="date" id="birth-day" name="birthDay"
+                            onblur="isRequired(this)">
                         <span class="error-mess"></span>
                     </div>
                     <div class="form-group">
@@ -91,7 +94,7 @@
                         <label for="password" class="form-label">Mật khẩu</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/lock.png"></span>
                         <input class="input-box form-control " type="password" placeholder="Mật khẩu" id="password"
-                            name="password">
+                            name="password" onblur="isRequired(this)">
                         <span class="error-mess"></span>
                     </div>
 
@@ -99,7 +102,7 @@
                         <label for="confirm-password" class="form-label">Nhập lại mật khẩu</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/lock.png"></span>
                         <input class="input-box form-control " type="password" placeholder="Nhập lại mật khẩu"
-                            id="confirm-password" name="confirmPassword">
+                            id="confirm-password" name="confirmPassword" onblur="isRequired(this)">
                         <span class="error-mess"></span>
                     </div>
 

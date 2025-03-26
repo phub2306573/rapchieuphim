@@ -172,36 +172,15 @@ function isNumber(event) {
     return true;
 }
 
-function formValidate() {
-    var form = document.getElementById('frm');
-    var formGroup = form.getElementsByClassName('form-group');
-    var needValidate = [];
-    for (let j = 0; j < formGroup.length; j++) {
-        let inputbox = formGroup[j].getElementsByClassName('input-box');
-        for (let i = 0; i < inputbox.length; i++) {
-            needValidate.push(inputbox[i]);
-        }
+function isRequired(option) {
+    var formMess = option.parentElement.querySelector('.error-mess');
+    if (option.value.length == 0) {
+        formMess.innerText = "*Vui lòng nhập trường này";
+        option.focus();
     }
-    for (let i in needValidate) {
-        if (!isRequired(needValidate[i]))
-            return false;
-        else
-            continue;
-
+    else {
+        formMess.innerText = " ";
     }
-
-
-    function isRequired(option) {
-        if (option.value.length == 0) {
-            console.log(option.value)
-            var formMess = option.parentElement.querySelector('.error-mess');
-            formMess.innerText = "*Vui lòng nhập trường này"
-            option.focus();
-            return false;
-        }
-        else return true;
-    }
-
 }
 
 
