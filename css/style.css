@@ -881,7 +881,6 @@ ul {
 
 .form_feedback {
     font-size: 16px;
-    grid-area: right;
 }
 
 @media (max-width: 763px) {
@@ -892,7 +891,8 @@ ul {
 }
 
 .form_table {
-    width: 90%;
+    padding: 20px;
+    margin: 20px;
     box-shadow: #746f6f 1px 1px 10px;
     border-radius: 10px;
 }
