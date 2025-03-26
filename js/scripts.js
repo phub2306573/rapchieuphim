@@ -176,7 +176,6 @@ function isRequired(option) {
     var formMess = option.parentElement.querySelector('.error-mess');
     if (option.value.length == 0) {
         formMess.innerText = "*Vui lòng nhập trường này";
-        option.focus();
     }
     else {
         formMess.innerText = " ";
