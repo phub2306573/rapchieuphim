@@ -872,6 +872,7 @@ ul {
 .text_lienhe {
     text-align: justify;
     grid-area: left;
+    padding: 5px;
 }
 
 .form_feedback {
