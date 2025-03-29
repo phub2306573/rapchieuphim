@@ -847,7 +847,7 @@ ul {
     display: grid;
     column-count: 2;
     column-gap: 50px;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 #lienhe h1 {
@@ -856,7 +856,7 @@ ul {
     font-size: 40px;
     margin-top: 30px;
     margin-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 23px;
 }
 
 .dau_lienhe {
@@ -866,7 +866,6 @@ ul {
 
 .noidung_lienhe {
     font-size: 16px;
-
 }
 
 .text_lienhe {
@@ -887,7 +886,7 @@ ul {
 }
 
 .form_table {
-    padding: 20px;
+    padding: 25px;
     box-shadow: #746f6f 1px 1px 10px;
     border-radius: 10px;
     margin: 5px;
