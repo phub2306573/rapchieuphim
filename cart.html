@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="./css/style.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
         <script src="./js/scripts.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
-<body>
+<body onload="show_cart()">
     <header id="header">
         <div class="container">
             <div class="logo">
@@ -33,20 +34,43 @@
 
     </header>
     <main id="main_Cart">
-        <div id="Cart_left"> <br><br><br><br><br><br><br><br><br><br></div>
-        <div id = "Cart_center">
-            <div id = "film_choosed"><br><br><br><br><br></div>
-            <div id = "another_option">
-                <select name="chongoi" id="">
-                    <option value="" disabled>Ghế Ngồi</option>
-                    <option value="">Ghế Vip</option>
-                    <option value="">Ghế Couple</option>
-                    <option value="">Ghế Cao Cấp</option>
-                    <option value="">Ghế Phổ Thông</option>
-                </select>
+        <div>
+            <table id="table_Cart">
+                <tr>
+                    <td >PosTer</td>
+                    <td >Ten Phim</td>
+                    <td >So Luong</td>
+                    <td >Ngay Xem</td>
+                    <td>Giá Vé</td>
+                    <td>yyyy</td>
+                </tr>
+    
+            </table>
+        </div>
+
+        <div id="otherChoose">
+            <div class="Mon">
+                <img src="/images/BongNgo.png" alt="">
+                <h3>Bỏng Ngô</h3>
+                <h3>Giá: 50k</h3>
+                <h3>Số Lượng <input type="number" name="" id="" value="0" max="10" min="0" ></h3>
+            </div>
+
+            <div class="Mon"><img src="/images/DoUong.jpg" alt="">
+                <h3>Bỏng Ngô</h3>
+                <h3>Giá: 15k </h3>
+                <h3>Số Lượng <input type="number" name="" id="" value="0" max="10" min="0" ></h3>
+            </div>
+            <div class="Mon">
+                <img src="/images/ComBo.jpg" alt="">
+                <h3>Combo Bỏng Ngô với Pepsi</h3>
+                <h3>59k</h3>
+                <h3>Số Lượng <input type="number" name="" id="" value="0" max="10" min="0" ></h3>
             </div>
         </div>
-        <div id = "Cart_right"> <br><br><br><br><br></div>
+        <div id="Sum_Tien">
+            
+        </div>
     </main>
     <footer id="footer">
         <div class="container footer-nav">

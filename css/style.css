@@ -922,39 +922,7 @@ ul {
 
 
 /* cart */
-#Cart_left {
-    grid-area: Cart_left;
-}
 
-#film_choosed {
-    grid-area: phim;
-}
-
-#another_option {
+#main_Cart{
     text-align: center;
-    grid-area: another;
-}
-
-
-#Cart_center {
-    background-color: white;
-    display: grid;
-    grid-area: Cart_center;
-    grid-template-areas:
-        "phim another";
-    grid-template-columns: 40% 60%;
-}
-
-#Cart_right {
-    grid-area: Cart_right;
-}
-
-#main_Cart {
-    height: 700px;
-    display: grid;
-    background-color: rgb(236, 231, 231);
-    grid-template-areas:
-        "Cart_left Cart_center Cart_right"
-    ;
-    grid-template-columns: 15% 70% 15%;
 }

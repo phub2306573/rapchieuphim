@@ -15,103 +15,180 @@ let sectionFilm = {
     "phim_1": {
         "id": "A1",
         "Name": "Na Tra Ma Đồng Giáng Thế",
-        "Price": "99k",
-        "Photo": "/images/phim1.jpg"
+        "Price": 99,
+        "Photo": "/images/phim1.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_2": {
         "id": "A2",
         "Name": "Nobita's Sky Utopia in Hindi",
         "Price": "105k",
-        "Photo": "/images/phim2.jpg"
+        "Photo": "/images/phim2.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_3": {
         "id": "A3",
         "Name": "Đào, phở và piano",
-        "Price": "99k",
-        "Photo": "/images/phim3.jpg"
+        "Price": 99,
+        "Photo": "/images/phim3.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_4": {
         "id": "A4",
         "Name": "Nữ Tu Bóng Tối",
-        "Price": "99k",
-        "Photo": "/images/phim4.jpg"
+        "Price": 99,
+        "Photo": "/images/phim4.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_5": {
         "id": "A5",
         "Name": "Cá Sấu Tử Thần",
-        "Price": "99k",
-        "Photo": "/images/phim5.jpg"
+        "Price": 99,
+        "Photo": "/images/phim5.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_6": {
         "id": "A6",
         "Name": "Kẻ Ăn Hồn",
-        "Price": "99k",
-        "Photo": "/images/phim6.jpg"
+        "Price": 99,
+        "Photo": "/images/phim6.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_7": {
         "id": "A7",
         "Name": "Breaking Bad",
-        "Price": "99k",
-        "Photo": "/images/phim7.jpg"
+        "Price": 99,
+        "Photo": "/images/phim7.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_8": {
         "id": "A8",
         "Name": "Cuộc Đào Tẩu Trên Không",
-        "Price": "99k",
-        "Photo": "/images/phim8.jpg"
+        "Price": 99,
+        "Photo": "/images/phim8.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_9": {
         "id": "A9",
         "Name": "Shin Cậu Bé Bút Chì",
-        "Price": "99k",
-        "Photo": "/images/phim9.jpg"
+        "Price": 99,
+        "Photo": "/images/phim9.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_10": {
         "id": "A10",
         "Name": "Quỷ Nhập Tràng",
-        "Price": "99k",
-        "Photo": "/images/phim10.jpg"
+        "Price": 99,
+        "Photo": "/images/phim10.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_11": {
         "id": "A11",
         "Name": "Nàng Bạch Tuyết",
-        "Price": "99k",
-        "Photo": "/images/phim11.jpg"
+        "Price": 99,
+        "Photo": "/images/phim11.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_12": {
         "id": "A2",
         "Name": "Venom The Last Dance",
-        "Price": "99k",
-        "Photo": "/images/phim12.jpg"
+        "Price": 99,
+        "Photo": "/images/phim12.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_13": {
         "id": "A3",
         "Name": "Bộ Phim Về MineCraft",
-        "Price": "99k",
-        "Photo": "/images/phim13.jpg"
+        "Price": 99,
+        "Photo": "/images/phim13.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_14": {
         "id": "A14",
         "Name": "Phim Xì Trum",
-        "Price": "99k",
-        "Photo": "/images/phim14.jpg"
+        "Price": 99,
+        "Photo": "/images/phim14.jpg",
+        "NgayXem":"07-03-2025"
     },
     "phim_15": {
         "id": "A15",
         "Name": "Bí Kiếp Luyện Rồng",
-        "Price": "99k",
-        "Photo": "/images/phim15.jpg"
+        "Price": 99,
+        "Photo": "/images/phim15.jpg",
+        "NgayXem":"07-03-2025"
     }
 }
 
-for (let i = 0; i < sectionFilm.length; i++) {
-    window.localStorage.getItem(i, sectionFilm[i]);
+let List_Do_An = {
+    "BongNgo":{
+        "SoLuong":0,
+        "Gia":50
+    },
+    "Pepsi":{
+        "SoLuong":0,
+        "Gia":15
+    },
+    "Combo":{
+        "SoLuong":0,
+        "Gia":59
+    }
 }
 
 
 
+function clearLocalStore(){
+    window.localStorage.clear();
+}
 
-console.log(sectionFilm);
+function Them(){
+    alert("Da Them Thanh Cong");
+}
+
+// console.log(sectionFilm["phim_1"]);
+
+function show_cart(){
+    let i = 0;
+    console.log("HEllo")
+    for(i=0;i<localStorage.length;i++){
+        let key = localStorage.key(i);
+        let Poster = sectionFilm[key].Photo;
+        let Name = sectionFilm[key].Name;
+        let NgayXem = sectionFilm[key].NgayXem;
+        let Price = sectionFilm[key].Price;
+        let table = document.getElementById("table_Cart");
+        let a = document.createElement("tr");
+        let thamso = "'" + key +"'";
+        console.log(thamso);
+        a.innerHTML = '<td><img src="'+Poster+'" alt="" class = "Poster_Cart"></td> <td>'+Name+
+        '</td> <td><input type="number" name="" id="" min="0" max="10" value="0" step="1"></td> <td>'+NgayXem+'</td> <td>'+Price+'</td>'
+        +'<td><i class="fa-solid fa-trash" onclick="deleteCart('+thamso+')"></i></td>';
+        table.appendChild(a);
+    }
+}
+
+function deleteCart(ID_film){
+    console.log("Chay");
+    if(window.localStorage.getItem(ID_film) != null){
+        window.localStorage.removeItem(ID_film);
+        location.reload();
+    }
+}
+
+function add_cart(ID_film){
+    Them();
+    if(window.localStorage.getItem(ID_film) == null){
+        window.localStorage.setItem(ID_film,1);
+        console.log("da them");
+    }
+    else{
+        console.log("da co");
+    }
+}
+
+function SumTien(){
+    let a = localStorage.length * 99;
+    let temp = document.getElementsByClassName("Mon");
+}
 
 
 
