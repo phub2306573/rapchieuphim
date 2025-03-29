@@ -921,5 +921,43 @@ ul {
 /* cart */
 
 #main_Cart{
+    width: 80%;
+    margin: auto;
     text-align: center;
+}
+
+#main_Cart table{
+    margin: auto;
+}
+
+#main_Cart td{
+    border: solid 2px black;
+    width: 200px;
+    height: 190px;
+    text-align: center;
+    object-fit: cover;
+}
+
+#otherChoose{
+    border: solid black 1px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Poster_Cart{
+    height: 85%;
+    width: 85%;
+    
+}
+
+.Mon{
+    height: 25%;
+    width: 25%;
+    display: inline-block;
+}
+
+.Mon img{
+    height: 30%;
+    width: 30%;
 }

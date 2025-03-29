@@ -22,42 +22,42 @@ let sectionFilm = {
     "phim_2": {
         "id": "A2",
         "Name": "Nobita's Sky Utopia in Hindi",
-        "Price": "105k",
+        "Price": 95,
         "Photo": "/images/phim2.jpg",
         "NgayXem":"07-03-2025"
     },
     "phim_3": {
         "id": "A3",
         "Name": "Đào, phở và piano",
-        "Price": 99,
+        "Price": 73,
         "Photo": "/images/phim3.jpg",
         "NgayXem":"07-03-2025"
     },
     "phim_4": {
         "id": "A4",
         "Name": "Nữ Tu Bóng Tối",
-        "Price": 99,
+        "Price": 85,
         "Photo": "/images/phim4.jpg",
         "NgayXem":"07-03-2025"
     },
     "phim_5": {
         "id": "A5",
         "Name": "Cá Sấu Tử Thần",
-        "Price": 99,
+        "Price": 79,
         "Photo": "/images/phim5.jpg",
         "NgayXem":"07-03-2025"
     },
     "phim_6": {
         "id": "A6",
         "Name": "Kẻ Ăn Hồn",
-        "Price": 99,
+        "Price": 79,
         "Photo": "/images/phim6.jpg",
         "NgayXem":"07-03-2025"
     },
     "phim_7": {
         "id": "A7",
         "Name": "Breaking Bad",
-        "Price": 99,
+        "Price": 150,
         "Photo": "/images/phim7.jpg",
         "NgayXem":"07-03-2025"
     },
@@ -155,14 +155,15 @@ function show_cart(){
         let Name = sectionFilm[key].Name;
         let NgayXem = sectionFilm[key].NgayXem;
         let Price = sectionFilm[key].Price;
-        let table = document.getElementById("table_Cart");
+        let tbody = document.getElementById("tbody");
+        console.log(tbody);
         let a = document.createElement("tr");
         let thamso = "'" + key +"'";
         console.log(thamso);
         a.innerHTML = '<td><img src="'+Poster+'" alt="" class = "Poster_Cart"></td> <td>'+Name+
         '</td> <td><input type="number" name="" id="" min="0" max="10" value="0" step="1"></td> <td>'+NgayXem+'</td> <td>'+Price+'</td>'
         +'<td><i class="fa-solid fa-trash" onclick="deleteCart('+thamso+')"></i></td>';
-        table.appendChild(a);
+        tbody.appendChild(a);
     }
 }
 
