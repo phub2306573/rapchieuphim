@@ -815,13 +815,6 @@ ul {
     list-style-type: none;
 }
 
-/* .fa-star{
-    animation: rotate 2s linear infinite;
-}
-@keyframes rotate {
-    from { transform: rotateY(-180deg); }
-    to { transform: rotateY(180deg); }
-} */
 .fa-star {
     display: inline-block;
     font-size: 20px;
@@ -854,6 +847,7 @@ ul {
     display: grid;
     column-count: 2;
     column-gap: 50px;
+    padding-left: 20px;
 }
 
 #lienhe h1 {
@@ -862,6 +856,7 @@ ul {
     font-size: 40px;
     margin-top: 30px;
     margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .dau_lienhe {
@@ -894,11 +889,12 @@ ul {
     padding: 20px;
     box-shadow: #746f6f 1px 1px 10px;
     border-radius: 10px;
+    margin: 5px;
 }
 
-.form_table td {
-    font-style: italic;
-    padding: 10px;
+.form_table h2{
+    text-align: center;
+    font-size: 30px;
 }
 
 .button_sub {
