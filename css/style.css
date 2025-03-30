@@ -72,11 +72,12 @@ hr {
 #header .logo {
     display: flex;
     justify-content: space-between;
+   
 }
 
-#header img {
-    width: 36px;
-    height: 36px;
+#header .menu-icon {
+    width: 50px;
+    height: 50px;
 
 }
 
@@ -85,7 +86,7 @@ hr {
     display: flex;
     align-content: center;
     justify-content: space-between;
-
+    padding: 10px 20px;
 }
 
 
@@ -129,15 +130,17 @@ hr {
 
 
 
+
 @media (min-width: 769px) {
-    .logo img {
+    .logo .menu-icon {
         display: none;
     }
+
 }
 
 
 @media (max-width: 768px) {
-    .logo img {
+    .logo .menu-icon {
         display: block;
     }
 
