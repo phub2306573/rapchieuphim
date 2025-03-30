@@ -478,6 +478,7 @@ hr {
         height: 180px;
         width: 147px;
         border-radius: 10%;
+        z-index: 0;
     }
 
     #div_ContentAndImgProduct {
@@ -985,11 +986,12 @@ ul {
 }
 
 #main_Cart td {
-    border: solid 2px black;
+    border: double 5px black;
     width: 200px;
     height: 190px;
     text-align: center;
     object-fit: cover;
+    font-size: 20px;
 }
 
 .Poster_Cart{
