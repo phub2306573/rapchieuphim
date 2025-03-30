@@ -484,6 +484,7 @@ main {
         height: 180px;
         width: 147px;
         border-radius: 10%;
+        z-index: 0;
     }
 
     #div_ContentAndImgProduct {
@@ -997,6 +998,7 @@ ul {
     background-color: #eeeeee;
 }
 
+<<<<<<< HEAD
 
 #main_Cart thead tr {
     background-color: #bbbbbb;
@@ -1010,6 +1012,15 @@ ul {
     text-align: center;
     object-fit: cover;
     border-bottom: 2px solid #929292;
+=======
+#main_Cart td {
+    border: double 5px black;
+    width: 200px;
+    height: 190px;
+    text-align: center;
+    object-fit: cover;
+    font-size: 20px;
+>>>>>>> 13d659390d74fc00f007bf699b32108e840ab15e
 }
 
 
