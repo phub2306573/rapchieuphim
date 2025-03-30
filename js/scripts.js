@@ -161,10 +161,11 @@ function show_cart(){
         let thamso = "'" + key +"'";
         console.log(thamso);
         a.innerHTML = '<td><img src="'+Poster+'" alt="" class = "Poster_Cart"></td> <td>'+Name+
-        '</td> <td><input type="number" name="" id="" min="0" max="10" value="0" step="1"></td> <td>'+NgayXem+'</td> <td>'+Price+'</td>'
+        '</td> <td><input type="number" name="" id="" min="1" max="10" value="1" step="1"></td> <td>'+NgayXem+'</td> <td>'+Price+',000 Đồng'+'</td>'
         +'<td><i class="fa-solid fa-trash" onclick="deleteCart('+thamso+')"></i></td>';
         tbody.appendChild(a);
     }
+    TongTien();
 }
 
 function deleteCart(ID_film){
@@ -186,11 +187,25 @@ function add_cart(ID_film){
     }
 }
 
-function SumTien(){
-    let a = localStorage.length * 99;
-    let temp = document.getElementsByClassName("Mon");
-}
 
+function TongTien(){
+    let TienFlim = 0;
+    let i;
+    for(i=0;i<localStorage.length;i++){
+        let key = localStorage.key(i);
+        TienFlim += sectionFilm[key].Price;
+    }
+    console.log(TienFlim);
+    let Cac_Do_An = document.getElementsByClassName("Mon");
+    let Tien_DO_An;
+    let a = Cac_Do_An[0].value * 50;
+    let b = Cac_Do_An[1].value * 15;
+    let c = Cac_Do_An[2].value * 59;
+    Tien_DO_An =  a+b+c;
+    let TongTien = TienFlim + Tien_DO_An;
+    let place = document.getElementById("ThanhTien");
+    place.innerHTML = '<h5>Tổng Tiền: '+TongTien+',000 Đồng</h5>'
+}
 
 
 
@@ -240,7 +255,6 @@ function selectTypeOfFilm() {
         }
     }
 }
-
 
 // Validate 
 function isNumber(event) {
