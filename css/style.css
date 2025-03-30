@@ -481,12 +481,45 @@ main {
     }
 
     .img_Product {
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        transition: opacity 0.3 ease;
+    }
+    .NutDatHang{
+        background-color: #d08ea200;
+        color: black;
+        height: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: white solid 1px;
+        z-index: -1;
+    }
+    .Cart_mobile{
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        display: none;
+    }
+    .container_img{
+        border-radius: 10%;
+        position: relative;
         height: 180px;
         width: 147px;
-        border-radius: 10%;
-        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.707)
     }
-
+    .container_img:hover .img_Product{
+        opacity: 0.1;
+    }
+    .container_img:hover .Cart_mobile{
+        display: flex;
+    }
+    .container_img:hover .NutDatHang{
+        color: rgb(227, 227, 76);
+        z-index: 1;
+    }
     #div_ContentAndImgProduct {
         display: inline-block;
         text-align: center;
@@ -779,6 +812,9 @@ main {
 
     #BoLoc {
         margin-bottom: 25px;
+    }
+    .NutDatHang{
+        display: none;
     }
 }
 

@@ -197,14 +197,26 @@ function deleteCart(ID_film) {
     }
 }
 
+function add_cart_mobile(ID_film,index){
+    let a = document.getElementsByClassName("NutDatHang");
+    if(a[index].name == "0"){
+        a[index].name = "1";
+        return;
+    }
+    else{
+        add_cart(ID_film);
+    }
+}
+
 function add_cart(ID_film) {
-    Them();
     if (window.localStorage.getItem(ID_film) == null) {
         window.localStorage.setItem(ID_film, 1);
+        Them();
         console.log("da them");
     }
     else {
         console.log("da co");
+        alert("Đơn Hàng Đã Có Trong Giỏ Hàng")
     }
 }
 
@@ -228,7 +240,6 @@ function TongTien(){
     let place = document.getElementById("ThanhTien");
     place.innerHTML = '<h5>Tổng Tiền: '+TongTien+',000 Đồng</h5>'
 }
-
 
 
 
