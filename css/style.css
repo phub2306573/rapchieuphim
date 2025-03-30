@@ -977,20 +977,30 @@ ul {
 #main_Cart {
     width: 80%;
     margin: auto;
-    text-align: center;
+    
 }
 
 #main_Cart table {
-    margin: auto;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #d1d1d1;
+    border-radius: 10px;
 }
 
 #main_Cart td {
-    border: solid 2px black;
+    
     width: 200px;
-    height: 190px;
-    text-align: center;
-    object-fit: cover;
+    height: fit-content;
+   
 }
+
+#main_Cart th, #main_Cart td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    
+}
+
 
 #otherChoose {
     border: solid black 1px;
