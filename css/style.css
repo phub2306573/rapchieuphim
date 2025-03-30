@@ -445,12 +445,16 @@ hr {
     }
 }
 
-.invalid {
-    border-color: #dc3545;
-    color: #dc3545;
+.input-box.invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
 }
 
-
+.error-mess {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
 
 /* product */
 
@@ -578,33 +582,36 @@ hr {
 
 
 
-@media (min-width: 768px) and (max-width:999px){
-    .movie-list{
+@media (min-width: 768px) and (max-width:999px) {
+    .movie-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 1000px) and (max-width:1299px){
-    .movie-list{
+@media (min-width: 1000px) and (max-width:1299px) {
+    .movie-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media (min-width: 1300px) and (max-width:1400px){
-    .movie-list{
+
+@media (min-width: 1300px) and (max-width:1400px) {
+    .movie-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 }
-@media (min-width: 1400px){
-    .movie-list{
+
+@media (min-width: 1400px) {
+    .movie-list {
         display: flex;
         flex-wrap: wrap;
-        
+
         justify-content: center;
     }
-    .phim_Product{
+
+    .phim_Product {
         width: 210px;
     }
 }
@@ -613,14 +620,14 @@ hr {
 
 
 @media (min-width:769px) {
-    
+
 
     .phim_Product {
         display: inline-block;
         margin-bottom: 5px;
         margin-top: 2px;
         border-radius: 8%;
-        
+
     }
 
     .img_Product {
@@ -940,7 +947,7 @@ ul {
     margin: 5px;
 }
 
-.form_table h2{
+.form_table h2 {
     text-align: center;
     font-size: 30px;
 }
@@ -967,17 +974,17 @@ ul {
 
 /* cart */
 
-#main_Cart{
+#main_Cart {
     width: 80%;
     margin: auto;
     text-align: center;
 }
 
-#main_Cart table{
+#main_Cart table {
     margin: auto;
 }
 
-#main_Cart td{
+#main_Cart td {
     border: solid 2px black;
     width: 200px;
     height: 190px;
@@ -985,26 +992,26 @@ ul {
     object-fit: cover;
 }
 
-#otherChoose{
+#otherChoose {
     border: solid black 1px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.Poster_Cart{
+.Poster_Cart {
     height: 85%;
     width: 85%;
-    
+
 }
 
-.Mon{
+.Mon {
     height: 25%;
     width: 25%;
     display: inline-block;
 }
 
-.Mon img{
+.Mon img {
     height: 30%;
     width: 30%;
 }
