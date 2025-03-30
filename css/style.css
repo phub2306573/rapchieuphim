@@ -72,7 +72,7 @@ hr {
 #header .logo {
     display: flex;
     justify-content: space-between;
-   
+
 }
 
 #header .menu-icon {
@@ -455,6 +455,7 @@ hr {
     font-size: 12px;
     margin-top: 4px;
 }
+
 
 /* product */
 
@@ -992,20 +993,20 @@ ul {
     object-fit: cover;
 }
 
-.Poster_Cart{
+.Poster_Cart {
     height: 100%;
     width: 100%;
 }
 
-.img_Other{
+.img_Other {
     height: 100px;
     width: 100px;
 }
 
-#ThanhToan td{
+#ThanhToan td {
     height: 50px;
 }
 
-#XacNhanDonHang td{
+#XacNhanDonHang td {
     height: 50px;
 }

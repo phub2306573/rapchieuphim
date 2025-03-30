@@ -40,21 +40,21 @@
         <div class="login form-container">
             <div class="form-box">
                 <h2>Đăng nhập</h2>
-                <form action="" method="post" id="frm">
+                <form id="frm">
 
                     <div class="form-group">
                         <label for="user-name" class="form-label">Tài khoản</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/user.png"></span>
-                        <input class="input-box form-control need-valiate" type="textbox" placeholder="Tên đăng nhập"
-                            id="user-name" name="userName">
+                        <input class="input-box form-control" type="textbox" placeholder="Tên đăng nhập" id="user-name"
+                            name="userName">
                         <span class="error-mess"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="password" class="form-label">Mật khẩu</label>
                         <span class="input-icon"><img class="input-form-icon" src="images/lock.png"></span>
-                        <input class="input-box form-control need-validate" type="password" placeholder="Mật khẩu"
-                            id="password" name="password">
+                        <input class="input-box form-control" type="password" placeholder="Mật khẩu" id="password"
+                            name="password">
                         <span class="error-mess"></span>
                     </div>
                     <div class="form-group">
@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="d-grid m-4">
-                        <button type="button" onclick="formValidate()" class="btn btn-dark">Đăng nhập</button>
+                        <button type="submit" class="btn btn-dark">Đăng nhập</button>
                     </div>
 
                 </form>
