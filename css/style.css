@@ -16,6 +16,12 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
 
 
 hr {
@@ -28,6 +34,20 @@ hr {
 
     margin: 0;
     padding: 20px;
+}
+
+@media (min-width: 769px) {
+    .container {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container {
+        max-width: initial;
+    }
 }
 
 
@@ -170,19 +190,7 @@ hr {
 
 }
 
-@media (min-width: 769px) {
-    .container {
-        margin: 0 auto;
-        max-width: 80%;
-    }
 
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-    .container {
-        max-width: initial;
-    }
-}
 
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -566,12 +574,50 @@ hr {
 }
 
 
+
+@media (min-width: 768px) and (max-width:999px){
+    .movie-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1299px){
+    .movie-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1300px) and (max-width:1400px){
+    .movie-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1400px){
+    .movie-list{
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+    }
+    .phim_Product{
+        width: 210px;
+    }
+}
+
+
+
+
 @media (min-width:769px) {
+    
+
     .phim_Product {
         display: inline-block;
         margin-bottom: 5px;
         margin-top: 2px;
         border-radius: 8%;
+        
     }
 
     .img_Product {
@@ -635,7 +681,6 @@ hr {
 
     .div_Content {
         height: 100px;
-        width: 230px;
         padding-left: 5%;
     }
 
