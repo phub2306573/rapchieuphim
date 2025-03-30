@@ -146,9 +146,6 @@ function Them() {
 
 // console.log(sectionFilm["phim_1"]);
 
-<<<<<<< HEAD
-function show_cart() {
-=======
 function TongTien(){
     let TienFlim = 0;
     let i;
@@ -171,7 +168,6 @@ function TongTien(){
 
 
 function show_cart(){
->>>>>>> 13d659390d74fc00f007bf699b32108e840ab15e
     let i = 0;
     console.log("HEllo")
     for (i = 0; i < localStorage.length; i++) {
@@ -185,15 +181,9 @@ function show_cart(){
         let a = document.createElement("tr");
         let thamso = "'" + key + "'";
         console.log(thamso);
-<<<<<<< HEAD
-        a.innerHTML = '<td><img src="' + Poster + '" alt="" class = "Poster_Cart"></td> <td>' + Name +
-            '</td> <td><input type="number" name="" id="" min="1" max="10" value="1" step="1"></td> <td>' + NgayXem + '</td> <td>' + Price + ',000 Đồng' + '</td>'
-            + '<td><i class="fa-solid fa-trash" onclick="deleteCart(' + thamso + ')"></i></td>';
-=======
         a.innerHTML = '<td><img src="'+Poster+'" alt="" class = "Poster_Cart"></td> <td>'+Name+
         '</td> <td><input type="number" name="" id="" min="1" max="10" value="1" step="1" onchange="TongTien()" class = "SLfilm"></td> <td>'+NgayXem+'</td> <td>'+Price+',000 Đồng'+'</td>'
         +'<td><i class="fa-solid fa-trash" onclick="deleteCart('+thamso+')"></i></td>';
->>>>>>> 13d659390d74fc00f007bf699b32108e840ab15e
         tbody.appendChild(a);
     }
     TongTien();
@@ -218,31 +208,30 @@ function add_cart(ID_film) {
     }
 }
 
-<<<<<<< HEAD
 
-function TongTien() {
+function TongTien(){
     let TienFlim = 0;
     let i;
-    for (i = 0; i < localStorage.length; i++) {
+    let SLfilm = document.getElementsByClassName("SLfilm");
+    for(i=0;i<localStorage.length;i++){
         let key = localStorage.key(i);
-        TienFlim += sectionFilm[key].Price;
+        TienFlim += sectionFilm[key].Price * SLfilm[i].value;
     }
-    console.log(TienFlim);
+    console.log("Tien FIlm "+TienFlim);
     let Cac_Do_An = document.getElementsByClassName("Mon");
     let Tien_DO_An;
     let a = Cac_Do_An[0].value * 50;
     let b = Cac_Do_An[1].value * 15;
     let c = Cac_Do_An[2].value * 59;
-    Tien_DO_An = a + b + c;
+    Tien_DO_An =  a+b+c;
     let TongTien = TienFlim + Tien_DO_An;
     let place = document.getElementById("ThanhTien");
-    place.innerHTML = '<h5>Tổng Tiền: ' + TongTien + ',000 Đồng</h5>'
+    place.innerHTML = '<h5>Tổng Tiền: '+TongTien+',000 Đồng</h5>'
 }
 
 
 
-=======
->>>>>>> 13d659390d74fc00f007bf699b32108e840ab15e
+
 function changeHeartColor(obj) {
     if (obj.style.color == "red") obj.style.color = "black";
     else obj.style.color = "red";
