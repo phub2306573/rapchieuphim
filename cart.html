@@ -41,53 +41,56 @@
             <table>
                     <thead>
                         <tr>                        
-                            <td >PosTer</td>
-                            <td >Ten Phim</td>
-                            <td >So Luong</td>
-                            <td >Ngay Xem</td>
-                            <td>Giá Vé</td>
-                            <td>yyyy</td>
+                            <td class="poster-td"><b>Poster</b></td>
+                            <td><b>Tên phim</b></td>
+                            <td><b>Số lượng</b></td>
+                            <td><b>Ngày xem</b></td>
+                            <td><b>Giá vé</b></td>
+                            <td><b>Xóa khỏi giỏ hàng</b></td>
                         </tr>
 
                     </thead>
                     <tbody id="tbody">
 
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2">
-                                <img src="/images/BongNgo.png" alt="" class="img_Other">
-                                <h5>Bỏng Ngô</h5>
-                                <h5>Giá: 50k</h5>
-                                <h5>Số Lượng: <input type="number" name="" id="" value="0" min="0" max="10" class="Mon"></h5>
-                            </td>
-                            <td colspan="2">
-                                <img src="/images/DoUong.jpg" alt="" class="img_Other">
-                                <h5>Pepsi</h5>
-                                <h5>Giá: 15k</h5>
-                                <h5>Số Lượng: <input type="number" name="" id="" value="0" min="0" max="10" class="Mon"></h5>
-                            </td>
-                            <td colspan="2">
-                                <img src="/images/ComBo.jpg" alt="" class="img_Other">
-                                <h5>Combo</h5>
-                                <h5>Giá: 59k</h5>
-                                <h5>Số Lượng: <input type="number" name="" id="" value="0" min="0" max="10" class="Mon"></h5>
-                            </td>
-                        </tr>
-                        <tr id="ThanhToan">
-                            <td colspan="6" id="ThanhTien"></td>
-                        </tr>
-                        <tr id="XacNhanDonHang">
-                            <td colspan="6"><input type="submit" name="" id="" value="Xác Nhận Đơn Hàng"></td>
-                        </tr>
-                    </tfoot>
+                    
             </table>
+            <h2>Vật phẩm mua kèm</h2>
+            <table>
+                
+                <tr>
+                    <td >
+                        <img src="/images/BongNgo.png" alt="" class="img_Other">
+                        <h5>Bỏng Ngô</h5>
+                        <h5>Giá: 50k</h5>
+                        <h5>Số Lượng: <input type="number" name="" id="" value="0" min="0" max="10" class="Mon"></h5>
+                    </td>
+                    <td>
+                        <img src="/images/DoUong.jpg" alt="" class="img_Other">
+                        <h5>Pepsi</h5>
+                        <h5>Giá: 15k</h5>
+                        <h5>Số Lượng: <input type="number" name="" id="" value="0" min="0" max="10" class="Mon"></h5>
+                    </td>
+                    <td>
+                        <img src="/images/ComBo.jpg" alt="" class="img_Other">
+                        <h5>Combo</h5>
+                        <h5>Giá: 59k</h5>
+                        <h5>Số Lượng: <input type="number" name="" id="" value="0" min="0" max="10" class="Mon"></h5>
+                    </td>
+                </tr>
+                
+            </table>
+           
         </div>
-
-        <div id="Sum_Tien">
-            
+        <div class="total">
+            <div id="ThanhToan">
+                <p colspan="6" id="ThanhTien"></p>
+            </div>
+            <div id="XacNhanDonHang">
+                <p colspan="6"><input type="submit" name="" id="" value="Xác Nhận Đơn Hàng"></p>
+            </div>
         </div>
-        
+       
     </main>
     <footer id="footer">
         <div class="container footer-nav">

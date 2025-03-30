@@ -141,7 +141,7 @@ function clearLocalStore() {
 }
 
 function Them() {
-    alert("Da Them Thanh Cong");
+    alert("Đã thêm vào giỏ hàng");
 }
 
 // console.log(sectionFilm["phim_1"]);

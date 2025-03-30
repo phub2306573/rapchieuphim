@@ -30,6 +30,11 @@ hr {
 }
 
 
+main {
+    padding: 20px;
+}
+
+
 .container {
 
     margin: 0;
@@ -521,7 +526,6 @@ hr {
         color: white;
         background-color: black;
         border-bottom: solid black;
-        margin: 10px;
     }
 
     .div_Icon {
@@ -712,7 +716,7 @@ hr {
         font-weight: bold;
         border-bottom: solid black;
         text-align: left;
-        margin-top: 20px;
+    
 
     }
 
@@ -903,16 +907,13 @@ ul {
     display: grid;
     column-count: 2;
     column-gap: 50px;
-    padding: 20px;
 }
 
 #lienhe h1 {
     color: black;
     text-align: left;
     font-size: 40px;
-    margin-top: 30px;
     margin-bottom: 20px;
-    padding-left: 23px;
 }
 
 .dau_lienhe {
@@ -976,26 +977,55 @@ ul {
 /* cart */
 
 #main_Cart {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    #main_Cart {
+        width: 80%;
+    }
+}
+
 
 #main_Cart table {
     margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #eeeeee;
 }
 
-#main_Cart td {
-    border: solid 2px black;
-    width: 200px;
-    height: 190px;
+
+#main_Cart thead tr {
+    background-color: #bbbbbb;
+}
+
+
+#main_Cart td, #main_Cart th {
+    
+   
+    padding: 20px;
     text-align: center;
     object-fit: cover;
+    border-bottom: 2px solid #929292;
 }
 
+
+#main_Cart tr:hover {
+    background-color: #bbbbbb;
+   
+}
+
+.poster-td{
+    width: 30%;
+}
+
+
 .Poster_Cart {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
 }
 
 .img_Other {
@@ -1010,3 +1040,10 @@ ul {
 #XacNhanDonHang td {
     height: 50px;
 }
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
