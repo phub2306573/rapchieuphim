@@ -146,54 +146,53 @@ function Them() {
 
 // console.log(sectionFilm["phim_1"]);
 
-function TongTien(){
-    let TienFlim = 0;
-    let i;
-    let SLfilm = document.getElementsByClassName("SLfilm");
-    for(i=0;i<localStorage.length;i++){
-        let key = localStorage.key(i);
-        TienFlim += sectionFilm[key].Price * SLfilm[i].value;
-    }
-    console.log("Tien FIlm "+TienFlim);
-    let Cac_Do_An = document.getElementsByClassName("Mon");
-    let Tien_DO_An;
-    let a = Cac_Do_An[0].value * 50;
-    let b = Cac_Do_An[1].value * 15;
-    let c = Cac_Do_An[2].value * 59;
-    Tien_DO_An =  a+b+c;
-    let TongTien = TienFlim + Tien_DO_An;
-    let place = document.getElementById("ThanhTien");
-    place.innerHTML = '<h5>Tổng Tiền: '+TongTien+',000 Đồng</h5>'
-}
-
-
 function show_cart(){
     let i = 0;
-    console.log("HEllo")
+    let tbody = document.getElementById("tbody");
+    tbody.innerHTML = " ";
     for (i = 0; i < localStorage.length; i++) {
         let key = localStorage.key(i);
+        if(key == "Combo" || key == "Pepsi" || key == "BongNgo") continue;
         let Poster = sectionFilm[key].Photo;
         let Name = sectionFilm[key].Name;
         let NgayXem = sectionFilm[key].NgayXem;
         let Price = sectionFilm[key].Price;
-        let tbody = document.getElementById("tbody");
-        console.log(tbody);
         let a = document.createElement("tr");
         let thamso = "'" + key + "'";
-        console.log(thamso);
         a.innerHTML = '<td><img src="'+Poster+'" alt="" class = "Poster_Cart"></td> <td>'+Name+
         '</td> <td><input type="number" name="" id="" min="1" max="10" value="1" step="1" onchange="TongTien()" class = "SLfilm"></td> <td>'+NgayXem+'</td> <td>'+Price+',000 Đồng'+'</td>'
         +'<td><i class="fa-solid fa-trash" onclick="deleteCart('+thamso+')"></i></td>';
         tbody.appendChild(a);
     }
+    let Do_An = document.getElementsByClassName("Mon");
+    Do_An[0].value = localStorage.getItem("BongNgo");
+    Do_An[1].value = localStorage.getItem("Pepsi");
+    Do_An[2].value = localStorage.getItem("Combo");
     TongTien();
+}
+
+
+function Cap_Nhat_Value_MonAn(index,obj){
+    if(index == 0){
+        window.localStorage.setItem("BongNgo",obj.value);
+    }
+    else{
+        if(index==1){
+            window.localStorage.setItem("Pepsi",obj.value);
+        }
+        else{
+            window.localStorage.setItem("Combo",obj.value);
+        }
+    }
+    show_cart();
 }
 
 function deleteCart(ID_film) {
     console.log("Chay");
     if (window.localStorage.getItem(ID_film) != null) {
         window.localStorage.removeItem(ID_film);
-        location.reload();
+        show_cart(ID_film);
+        // location.reload();
     }
 }
 
@@ -209,6 +208,9 @@ function add_cart_mobile(ID_film,index){
 }
 
 function add_cart(ID_film) {
+    window.localStorage.setItem("BongNgo", 0);
+    window.localStorage.setItem("Pepsi", 0);
+    window.localStorage.setItem("Combo", 0);
     if (window.localStorage.getItem(ID_film) == null) {
         window.localStorage.setItem(ID_film, 1);
         Them();
@@ -227,9 +229,13 @@ function TongTien(){
     let SLfilm = document.getElementsByClassName("SLfilm");
     for(i=0;i<localStorage.length;i++){
         let key = localStorage.key(i);
-        TienFlim += sectionFilm[key].Price * SLfilm[i].value;
+        let k = 0;
+        if(key == "Combo" || key == "Pepsi" || key == "BongNgo") continue;
+        else{
+            TienFlim += sectionFilm[key].Price * SLfilm[k].value;
+            k++;
+        }
     }
-    console.log("Tien FIlm "+TienFlim);
     let Cac_Do_An = document.getElementsByClassName("Mon");
     let Tien_DO_An;
     let a = Cac_Do_An[0].value * 50;
