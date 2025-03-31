@@ -58,7 +58,6 @@ main {
 
 #header {
 
-
     background: #333;
     color: #fff;
 
@@ -839,7 +838,7 @@ main {
     color: black;
     text-align: left;
     font-size: 40px;
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .box {
