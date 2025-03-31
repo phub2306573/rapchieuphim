@@ -241,6 +241,10 @@ function TongTien(){
     place.innerHTML = '<h5>Tổng Tiền: '+TongTien+',000 Đồng</h5>'
 }
 
+function dathang(){
+    alert("Đặt hàng thành công");
+}
+
 
 
 function changeHeartColor(obj) {

@@ -824,8 +824,15 @@ main {
 
 /* about */
 #gioithieu {
-    max-width: 1024px;
+    max-width: 80%;
     margin: auto;
+}
+
+@media  (max-width: 768px) {
+    #gioithieu {
+        max-width: 100%;
+    }
+    
 }
 
 #gioithieu h1 {
@@ -934,9 +941,16 @@ ul {
 
 /* contact */
 
+
 #lienhe {
-    max-width: 1024px;
-    margin: auto;
+    max-width: 100%;
+}
+
+@media  (min-width: 768px) {
+    #lienhe {
+        max-width: 80%;
+        margin: auto;
+    }
 }
 
 .box_lienhe {
@@ -1036,7 +1050,7 @@ ul {
 
 
 #main_Cart thead tr {
-    background-color: #bbbbbb;
+    background-color: #c7c7c7;
 }
 
 
@@ -1050,8 +1064,15 @@ ul {
 }
 
 
-#main_Cart tr:hover {
-    background-color: #bbbbbb;
+#main_Cart #movie-table tr:hover {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #c7c7c7;
+   
+}
+
+#main_Cart #food-table td:hover {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #c7c7c7;
    
 }
 
