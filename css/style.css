@@ -528,9 +528,7 @@ main {
         width: 100%;
     }
 
-    #body_Product {
-        background-color: rgba(73, 14, 14, 0.158);
-    }
+   
 
 
     .div_Content {
@@ -555,11 +553,11 @@ main {
     #TieuDe {
         font-size: 40px;
         margin-bottom: 30px;
-
-        color: white;
-        background-color: black;
+        font-weight: bold; 
+        text-align: left;
         border-bottom: solid black;
     }
+   
 
     .div_Icon {
         position: absolute;
@@ -685,7 +683,7 @@ main {
         display: inline-block;
         margin: 5px 5px 15px;
 
-        background-color: rgb(215, 200, 200);
+        background-color: rgba(80, 80, 82, 0.151);
     }
 
     #main_Product img {
@@ -718,9 +716,7 @@ main {
         grid-template-columns: 10% 80% 10%;
     }
 
-    #body_Product {
-        background-color: rgba(73, 14, 14, 0.158);
-    }
+   
 
     .div_Content td {
         text-align: left;
