@@ -686,11 +686,11 @@ main {
         background-color: rgba(80, 80, 82, 0.151);
     }
 
-    #main_Product img {
+    #main_Product img, #trangchu img {
         transition: transform 0.3s ease;
     }
 
-    #main_Product img:hover {
+    #main_Product img:hover, #trangchu img:hover {
         transform: scale(1.05);
     }
 
