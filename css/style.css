@@ -1100,3 +1100,6 @@ ul {
     margin-top: 10px;
 }
 
+#main_Cart input[type='number']{
+   border-radius: 5px;
+}
