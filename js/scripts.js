@@ -197,14 +197,7 @@ function deleteCart(ID_film) {
 }
 
 function add_cart_mobile(ID_film,index){
-    let a = document.getElementsByClassName("NutDatHang");
-    if(a[index].name == "0"){
-        a[index].name = "1";
-        return;
-    }
-    else{
-        add_cart(ID_film);
-    }
+    add_cart();
 }
 
 function add_cart(ID_film) {
@@ -218,7 +211,7 @@ function add_cart(ID_film) {
     }
     else {
         console.log("da co");
-        alert("Đơn Hàng Đã Có Trong Giỏ Hàng")
+        alert("Phim Đã Có Trong Giỏ Hàng")
     }
 }
 
