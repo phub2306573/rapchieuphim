@@ -191,13 +191,14 @@ function deleteCart(ID_film) {
     console.log("Chay");
     if (window.localStorage.getItem(ID_film) != null) {
         window.localStorage.removeItem(ID_film);
+        console.log("Da Xoa "+ID_film);
         show_cart(ID_film);
         // location.reload();
     }
 }
 
 function add_cart_mobile(ID_film,index){
-    add_cart();
+    add_cart(ID_film);
 }
 
 function add_cart(ID_film) {
