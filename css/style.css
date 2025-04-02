@@ -49,53 +49,49 @@ main {
 
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-    .container {
-        max-width: initial;
-    }
-}
 
 
-#header {
+header {
 
     background: #333;
     color: #fff;
 
 }
 
-#header .logo {
+header .logo {
     display: flex;
     justify-content: space-between;
 
 }
 
-#header .menu-icon {
+header .menu-icon {
     width: 50px;
     height: 50px;
 
 }
 
-#header .container {
-
+header .container {
     display: flex;
     align-content: center;
     justify-content: space-between;
     padding: 10px 20px;
 }
 
+header .navbar{
+    align-content: center;
+}
 
-
-#header .navbar ul {
+header .navbar ul {
     margin-bottom: 0;
 }
 
-#header .navbar ul li {
+header .navbar ul li {
     display: inline;
 
 }
 
 
-#header .navbar ul li a {
+header .navbar ul li a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -105,7 +101,7 @@ main {
 
 }
 
-#header .navbar ul li a:hover {
+header .navbar ul li a:hover {
     background: #cac8c8;
     transition: all 0.3s ease-out;
     transform: scale(1.01);
@@ -113,7 +109,7 @@ main {
 }
 
 
-#header .navbar ul li a.active {
+header .navbar ul li a.active {
     background: #cac8c8;
     color: #241e1e;
     transform: scale(1.01);
@@ -134,6 +130,7 @@ main {
 
     .navbar {
         display: none;
+
     }
 
     .navbar.active {
@@ -145,28 +142,26 @@ main {
 
 
 @media (max-width: 1200px) {
-    #header .container {
+    header .container {
         flex-direction: column;
     }
 
-    #header .navbar ul {
+    header .navbar ul {
         margin: 0;
-        padding: 0;
+        padding: 5px;
         display: grid;
         width: 100%;
 
     }
 
-    #header .navbar ul li {
+    header .navbar ul li {
         margin: 0;
         text-align: center;
-        margin: 2px 3px;
-
     }
 
-    #header .navbar ul li a {
+    header .navbar ul li a {
         display: block;
-        padding: 5px 0;
+        padding: 10px 0;
     }
 
 
@@ -176,13 +171,13 @@ main {
 
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    #header .navbar ul {
+    header .navbar ul {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    #header .navbar ul {
+    header .navbar ul {
         grid-template-columns: repeat(1, 1fr);
         border: 1px solid #e3d9d9;
         border-radius: 5px;
