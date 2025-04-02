@@ -1103,3 +1103,25 @@ ul {
 #main_Cart input[type='number']{
    border-radius: 5px;
 }
+
+#btnXacNhan {
+    background-color: #665d5d;
+    color: white; 
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#btnXacNhan:hover {
+    background-color: #383333; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+#btnXacNhan:active {
+    transform: scale(0.95); 
+}
