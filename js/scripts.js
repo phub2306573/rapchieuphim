@@ -16,105 +16,105 @@ let sectionFilm = {
         "id": "A1",
         "Name": "Na Tra Ma Đồng Giáng Thế",
         "Price": 99,
-        "Photo": "/images/phim1.jpg",
+        "Photo": "images/phim1.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_2": {
         "id": "A2",
         "Name": "Nobita's Sky Utopia in Hindi",
         "Price": 95,
-        "Photo": "/images/phim2.jpg",
+        "Photo": "images/phim2.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_3": {
         "id": "A3",
         "Name": "Đào, phở và piano",
         "Price": 73,
-        "Photo": "/images/phim3.jpg",
+        "Photo": "images/phim3.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_4": {
         "id": "A4",
         "Name": "Nữ Tu Bóng Tối",
         "Price": 85,
-        "Photo": "/images/phim4.jpg",
+        "Photo": "images/phim4.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_5": {
         "id": "A5",
         "Name": "Cá Sấu Tử Thần",
         "Price": 79,
-        "Photo": "/images/phim5.jpg",
+        "Photo": "images/phim5.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_6": {
         "id": "A6",
         "Name": "Kẻ Ăn Hồn",
         "Price": 79,
-        "Photo": "/images/phim6.jpg",
+        "Photo": "images/phim6.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_7": {
         "id": "A7",
         "Name": "Breaking Bad",
         "Price": 150,
-        "Photo": "/images/phim7.jpg",
+        "Photo": "images/phim7.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_8": {
         "id": "A8",
         "Name": "Cuộc Đào Tẩu Trên Không",
         "Price": 99,
-        "Photo": "/images/phim8.jpg",
+        "Photo": "images/phim8.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_9": {
         "id": "A9",
         "Name": "Shin Cậu Bé Bút Chì",
         "Price": 99,
-        "Photo": "/images/phim9.jpg",
+        "Photo": "images/phim9.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_10": {
         "id": "A10",
         "Name": "Quỷ Nhập Tràng",
         "Price": 99,
-        "Photo": "/images/phim10.jpg",
+        "Photo": "images/phim10.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_11": {
         "id": "A11",
         "Name": "Nàng Bạch Tuyết",
         "Price": 99,
-        "Photo": "/images/phim11.jpg",
+        "Photo": "images/phim11.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_12": {
         "id": "A2",
         "Name": "Venom The Last Dance",
         "Price": 99,
-        "Photo": "/images/phim12.jpg",
+        "Photo": "images/phim12.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_13": {
         "id": "A3",
         "Name": "Bộ Phim Về MineCraft",
         "Price": 99,
-        "Photo": "/images/phim13.jpg",
+        "Photo": "images/phim13.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_14": {
         "id": "A14",
         "Name": "Phim Xì Trum",
         "Price": 99,
-        "Photo": "/images/phim14.jpg",
+        "Photo": "images/phim14.jpg",
         "NgayXem": "07-03-2025"
     },
     "phim_15": {
         "id": "A15",
         "Name": "Bí Kiếp Luyện Rồng",
         "Price": 99,
-        "Photo": "/images/phim15.jpg",
+        "Photo": "images/phim15.jpg",
         "NgayXem": "07-03-2025"
     }
 }
