@@ -986,7 +986,6 @@ ul {
     }
 }
 
-
 #main_Cart table {
     margin: auto;
     border-collapse: collapse;
@@ -1038,13 +1037,7 @@ ul {
     width: 100px;
 }
 
-#ThanhToan td {
-    height: 50px;
-}
 
-#XacNhanDonHang td {
-    height: 50px;
-}
 
 .total{
     display: flex;
