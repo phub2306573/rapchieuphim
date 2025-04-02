@@ -337,16 +337,17 @@ main {
 
 
 /* register + login */
-.form-center {
+
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 
-.form-container {
+.form-box {
     position: relative;
     width: 500px;
-    height: auto;
     background-color: #f5f5f5;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .5);
     border-radius: 15px;
@@ -355,9 +356,11 @@ main {
     align-items: center;
 }
 
-.form-box {
+
+.form {
     width: 100%;
     padding: 40px;
+    height: 100%
 }
 
 .form-box h2 {
@@ -366,14 +369,38 @@ main {
     text-align: center;
 }
 
+.input-box {
+    width: 100%;
+    height: 36px;
+    margin: 10px 0;
+    border-color: #75b798;
+    border-style: solid;
+    border-width: 0.1px;
+    border-radius: 5px;
+    padding: 4px 4%;
+    font-size: 16px;
+}
+
+
+
 .input-form-icon {
     width: 1em;
     height: 1em;
 }
 
 .input-icon {
+    display: inline;
     position: absolute;
     right: 10%;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
+
+.alr-have-acc {
+    align-items: center;
+    justify-items: center;
 }
 
 .alr-have-acc p a {
@@ -384,6 +411,21 @@ main {
 
 .alr-have-acc p a:hover {
     text-decoration: underline;
+}
+
+.btn {
+    margin: 10px 0px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #383333;
 }
 
 .genderOp {
@@ -408,7 +450,7 @@ main {
 
 .error-mess {
     color: red;
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 4px;
 }
 
@@ -437,7 +479,8 @@ main {
         border-radius: 10%;
         transition: opacity 0.3 ease;
     }
-    .NutDatHang{
+
+    .NutDatHang {
         background-color: #d08ea200;
         color: black;
         height: 45px;
@@ -446,7 +489,8 @@ main {
         border: white solid 1px;
         z-index: -1;
     }
-    .Cart_mobile{
+
+    .Cart_mobile {
         text-align: center;
         color: white;
         position: absolute;
@@ -454,23 +498,28 @@ main {
         left: 15%;
         display: none;
     }
-    .container_img{
+
+    .container_img {
         border-radius: 10%;
         position: relative;
         height: 180px;
         width: 147px;
         background-color: rgba(0, 0, 0, 0.707)
     }
-    .container_img:hover .img_Product{
+
+    .container_img:hover .img_Product {
         opacity: 0.1;
     }
-    .container_img:hover .Cart_mobile{
+
+    .container_img:hover .Cart_mobile {
         display: flex;
     }
-    .container_img:hover .NutDatHang{
+
+    .container_img:hover .NutDatHang {
         color: rgb(227, 227, 76);
         z-index: 1;
     }
+
     #div_ContentAndImgProduct {
         display: inline-block;
         text-align: center;
@@ -480,7 +529,7 @@ main {
         width: 100%;
     }
 
-   
+
 
 
     .div_Content {
@@ -505,11 +554,11 @@ main {
     #TieuDe {
         font-size: 40px;
         margin-bottom: 30px;
-        font-weight: bold; 
+        font-weight: bold;
         text-align: left;
         border-bottom: solid black;
     }
-   
+
 
     .div_Icon {
         position: absolute;
@@ -638,11 +687,13 @@ main {
         background-color: rgba(80, 80, 82, 0.151);
     }
 
-    #main_Product img, #trangchu img {
+    #main_Product img,
+    #trangchu img {
         transition: transform 0.3s ease;
     }
 
-    #main_Product img:hover, #trangchu img:hover {
+    #main_Product img:hover,
+    #trangchu img:hover {
         transform: scale(1.05);
     }
 
@@ -668,7 +719,7 @@ main {
         grid-template-columns: 10% 80% 10%;
     }
 
-   
+
 
     .div_Content td {
         text-align: left;
@@ -697,7 +748,7 @@ main {
         font-weight: bold;
         border-bottom: solid black;
         text-align: left;
-    
+
 
     }
 
@@ -760,7 +811,8 @@ main {
     #BoLoc {
         margin-bottom: 25px;
     }
-    .NutDatHang{
+
+    .NutDatHang {
         display: none;
     }
 }
@@ -775,11 +827,11 @@ main {
     margin: auto;
 }
 
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
     #gioithieu {
         max-width: 100%;
     }
-    
+
 }
 
 #gioithieu h1 {
@@ -893,7 +945,7 @@ ul {
     max-width: 100%;
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
     #lienhe {
         max-width: 80%;
         margin: auto;
@@ -1000,9 +1052,10 @@ ul {
 }
 
 
-#main_Cart td, #main_Cart th {
-    
-   
+#main_Cart td,
+#main_Cart th {
+
+
     padding: 20px 10px;
     text-align: center;
     object-fit: cover;
@@ -1013,16 +1066,16 @@ ul {
 #main_Cart #movie-table tr:hover {
     transition: background-color 0.2s ease-in-out;
     background-color: #c7c7c7;
-   
+
 }
 
 #main_Cart #food-table td:hover {
     transition: background-color 0.2s ease-in-out;
     background-color: #c7c7c7;
-   
+
 }
 
-.poster-td{
+.poster-td {
     width: 30%;
 }
 
@@ -1039,34 +1092,34 @@ ul {
 
 
 
-.total{
+.total {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-#main_Cart input[type='number']{
-   border-radius: 5px;
+#main_Cart input[type='number'] {
+    border-radius: 5px;
 }
 
 #btnXacNhan {
     background-color: #665d5d;
-    color: white; 
+    color: white;
     border: none;
     padding: 12px 20px;
     font-weight: bold;
-    border-radius: 6px; 
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 #btnXacNhan:hover {
-    background-color: #383333; 
+    background-color: #383333;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
 
 #btnXacNhan:active {
-    transform: scale(0.95); 
+    transform: scale(0.95);
 }
