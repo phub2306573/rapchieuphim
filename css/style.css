@@ -63,16 +63,6 @@ main {
 
 }
 
-#header a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#header h1 {
-    margin-bottom: 0;
-}
-
-
 #header .logo {
     display: flex;
     justify-content: space-between;
@@ -97,12 +87,10 @@ main {
 
 #header .navbar ul {
     margin-bottom: 0;
-
 }
 
 #header .navbar ul li {
     display: inline;
-
 
 }
 
@@ -114,7 +102,6 @@ main {
     border: 1px solid #333;
     border-radius: 5px;
     font-weight: bold;
-    align-content: center;
 
 }
 
@@ -131,9 +118,6 @@ main {
     color: #241e1e;
     transform: scale(1.01);
 }
-
-
-
 
 @media (min-width: 769px) {
     .logo .menu-icon {
@@ -156,15 +140,8 @@ main {
         display: block;
     }
 
-    .navbar ul li a {
-        display: block;
-
-    }
-
 
 }
-
-
 
 
 @media (max-width: 1200px) {
@@ -182,9 +159,7 @@ main {
 
     #header .navbar ul li {
         margin: 0;
-
         text-align: center;
-        display: block;
         margin: 2px 3px;
 
     }
@@ -219,27 +194,6 @@ main {
 
 
 
-#main-content {
-    padding: 20px 0;
-}
-
-.featured-movies,
-.showing-now .about-us,
-.product-list,
-.cart,
-.login,
-.register,
-.contact {
-    padding: 20px 0;
-}
-
-
-.movie-list {
-    text-align: center;
-
-}
-
-
 
 #footer {
     background: #333;
@@ -265,6 +219,7 @@ main {
 #footer ul li a {
     color: #fff;
     text-decoration: none;
+    display: block;
 
 }
 
@@ -309,21 +264,24 @@ main {
 
 
 
+.movie-list {
+    text-align: center;
+}
 
 
 .featured-movies {
     grid-area: featured-movies;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .showing-now {
     grid-area: showing-now;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .ads-sidebar {
     grid-area: ads-sidebar;
-    padding: 20px;
+    padding: 20px 0;
 
 }
 
@@ -356,18 +314,14 @@ main {
 
     .featured-movies {
         grid-area: featured-movies;
-        padding: 0 20px;
     }
 
     .showing-now {
         grid-area: showing-now;
-        padding: 0 20px;
     }
 
     .ads-sidebar {
         grid-area: ads-sidebar;
-        padding: 0 20px;
-
     }
 
     .ads-sidebar div {
@@ -379,8 +333,6 @@ main {
     }
 
 }
-
-
 
 
 
