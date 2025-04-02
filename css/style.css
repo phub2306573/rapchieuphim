@@ -191,10 +191,6 @@ main {
 }
 
 
-
-
-
-
 #footer {
     background: #333;
     color: #fff;
@@ -337,12 +333,15 @@ main {
 
 
 /* register + login */
+.wrapper {
+    height: 80vh;
+}
 
 .form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+
 }
 
 .form-box {
