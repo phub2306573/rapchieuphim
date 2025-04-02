@@ -9,14 +9,14 @@ function toggleMenu() {
 
 $(document).ready(function() {
     $('.slick-carousel').slick({
-        dots: true,          // Hiển thị dots điều hướng
-        arrows: true,        // Hiển thị nút prev/next
-        infinite: true,      // Lặp vô hạn
-        speed: 500,         // Tốc độ chuyển slide (ms)
-        slidesToShow: 1,     // Số slide hiển thị cùng lúc
-        slidesToScroll: 1,   // Số slide cuộn mỗi lần
-        autoplay: true,      // Tự động chạy
-        autoplaySpeed: 3000  // Tốc độ tự động chạy (ms)
+        dots: true,          
+        arrows: true,    
+        infinite: true,     
+        speed: 500,         
+        slidesToShow: 1,   
+        slidesToScroll: 1,  
+        autoplay: true,      
+        autoplaySpeed: 3000 
     });
 });
 
