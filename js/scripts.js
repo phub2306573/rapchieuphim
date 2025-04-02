@@ -146,22 +146,22 @@ function Them() {
 
 // console.log(sectionFilm["phim_1"]);
 
-function show_cart(){
+function show_cart() {
     let i = 0;
     let tbody = document.getElementById("tbody");
     tbody.innerHTML = " ";
     for (i = 0; i < localStorage.length; i++) {
         let key = localStorage.key(i);
-        if(key == "Combo" || key == "Pepsi" || key == "BongNgo") continue;
+        if (key == "Combo" || key == "Pepsi" || key == "BongNgo") continue;
         let Poster = sectionFilm[key].Photo;
         let Name = sectionFilm[key].Name;
         let NgayXem = sectionFilm[key].NgayXem;
         let Price = sectionFilm[key].Price;
         let a = document.createElement("tr");
         let thamso = "'" + key + "'";
-        a.innerHTML = '<td><img src="'+Poster+'" alt="" class = "Poster_Cart"></td> <td>'+Name+
-        '</td> <td><input type="number" name="" id="" min="1" max="10" value="1" step="1" onchange="TongTien()" class = "SLfilm"></td> <td>'+NgayXem+'</td> <td>'+Price+',000 Đồng'+'</td>'
-        +'<td><i class="fa-solid fa-trash" onclick="deleteCart('+thamso+')"></i></td>';
+        a.innerHTML = '<td><img src="' + Poster + '" alt="" class = "Poster_Cart"></td> <td>' + Name +
+            '</td> <td><input type="number" name="" id="" min="1" max="10" value="1" step="1" onchange="TongTien()" class = "SLfilm"></td> <td>' + NgayXem + '</td> <td>' + Price + ',000 Đồng' + '</td>'
+            + '<td><i class="fa-solid fa-trash" onclick="deleteCart(' + thamso + ')"></i></td>';
         tbody.appendChild(a);
     }
     let Do_An = document.getElementsByClassName("Mon");
@@ -172,16 +172,16 @@ function show_cart(){
 }
 
 
-function Cap_Nhat_Value_MonAn(index,obj){
-    if(index == 0){
-        window.localStorage.setItem("BongNgo",obj.value);
+function Cap_Nhat_Value_MonAn(index, obj) {
+    if (index == 0) {
+        window.localStorage.setItem("BongNgo", obj.value);
     }
-    else{
-        if(index==1){
-            window.localStorage.setItem("Pepsi",obj.value);
+    else {
+        if (index == 1) {
+            window.localStorage.setItem("Pepsi", obj.value);
         }
-        else{
-            window.localStorage.setItem("Combo",obj.value);
+        else {
+            window.localStorage.setItem("Combo", obj.value);
         }
     }
     show_cart();
@@ -191,13 +191,13 @@ function deleteCart(ID_film) {
     console.log("Chay");
     if (window.localStorage.getItem(ID_film) != null) {
         window.localStorage.removeItem(ID_film);
-        console.log("Da Xoa "+ID_film);
+        console.log("Da Xoa " + ID_film);
         show_cart(ID_film);
         // location.reload();
     }
 }
 
-function add_cart_mobile(ID_film,index){
+function add_cart_mobile(ID_film, index) {
     add_cart(ID_film);
 }
 
@@ -217,15 +217,15 @@ function add_cart(ID_film) {
 }
 
 
-function TongTien(){
+function TongTien() {
     let TienFlim = 0;
     let i;
     let SLfilm = document.getElementsByClassName("SLfilm");
-    for(i=0;i<localStorage.length;i++){
+    for (i = 0; i < localStorage.length; i++) {
         let key = localStorage.key(i);
         let k = 0;
-        if(key == "Combo" || key == "Pepsi" || key == "BongNgo") continue;
-        else{
+        if (key == "Combo" || key == "Pepsi" || key == "BongNgo") continue;
+        else {
             TienFlim += sectionFilm[key].Price * SLfilm[k].value;
             k++;
         }
@@ -235,13 +235,13 @@ function TongTien(){
     let a = Cac_Do_An[0].value * 50;
     let b = Cac_Do_An[1].value * 15;
     let c = Cac_Do_An[2].value * 59;
-    Tien_DO_An =  a+b+c;
+    Tien_DO_An = a + b + c;
     let TongTien = TienFlim + Tien_DO_An;
     let place = document.getElementById("ThanhTien");
-    place.innerHTML = '<h5>Tổng Tiền: '+TongTien+',000 Đồng</h5>'
+    place.innerHTML = '<h5>Tổng Tiền: ' + TongTien + ',000 Đồng</h5>'
 }
 
-function dathang(){
+function dathang() {
     alert("Đặt hàng thành công");
 }
 
@@ -335,7 +335,6 @@ inputs.forEach(function (input) {
 });
 
 function formValidate() {
-    event.preventDefault(); // Ngăn form gửi đi nếu có lỗi
 
     var Form = document.querySelector("#frm");
     var Username = document.querySelector("#user-name");
