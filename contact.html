@@ -58,13 +58,21 @@
                     <div class="form_table">
                         <h2>Phản hồi</h2>
                         <label for="name">Họ và tên:</label><br>
-                        <input type="text" id="name" name="name" placeholder="Nhập họ tên" required><br><br>
+                        <input type="text" id="name" name="name" placeholder="Nhập họ tên" required
+                            oninvalid="this.setCustomValidity('Vui lòng nhập họ tên!')" 
+                            oninput="this.setCustomValidity('')"><br><br>
                         <label for="email">Email:</label><br>
-                        <input type="email" id="email" placeholder="Nhập email" required><br><br>
+                        <input type="email" id="email" placeholder="Nhập email" required
+                            oninvalid="this.setCustomValidity('Vui lòng nhập địa chỉ email hợp lệ!')" 
+                            oninput="this.setCustomValidity('')"><br><br>
                         <label for="phone">Số điện thoại:</label><br>
-                        <input type="tel" id="phone" placeholder="Nhập số điện thoại" required><br><br>
+                        <input type="tel" id="phone" pattern="[0]{1}[0-9]{9}" placeholder="Nhập số điện thoại" required
+                            oninvalid="this.setCustomValidity('Vui lòng nhập số điện thoại gồm 10 chữ số và bắt đầu từ 0!')" 
+                            oninput="this.setCustomValidity('')"><br><br>
                         <label for="message">Nội dung phản hồi:</label><br>
-                        <textarea id="message" rows="5" placeholder="Nhập nội dung phản hồi" required></textarea><br><br>
+                        <textarea id="message" rows="5" placeholder="Nhập nội dung phản hồi" required
+                            oninvalid="this.setCustomValidity('Vui lòng nhập nội dung phản hồi!')" 
+                            oninput="this.setCustomValidity('')"></textarea><br><br>
                         <div class="btn_sub">
                             <button type="submit" class="button_sub">Gửi</button>
                         </div>
