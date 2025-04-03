@@ -49,53 +49,49 @@ main {
 
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-    .container {
-        max-width: initial;
-    }
-}
 
 
-#header {
+header {
 
     background: #333;
     color: #fff;
 
 }
 
-#header .logo {
+header .logo {
     display: flex;
     justify-content: space-between;
 
 }
 
-#header .menu-icon {
+header .menu-icon {
     width: 50px;
     height: 50px;
 
 }
 
-#header .container {
-
+header .container {
     display: flex;
     align-content: center;
     justify-content: space-between;
     padding: 10px 20px;
 }
 
+header .navbar{
+    align-content: center;
+}
 
-
-#header .navbar ul {
+header .navbar ul {
     margin-bottom: 0;
 }
 
-#header .navbar ul li {
+header .navbar ul li {
     display: inline;
 
 }
 
 
-#header .navbar ul li a {
+header .navbar ul li a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -105,7 +101,7 @@ main {
 
 }
 
-#header .navbar ul li a:hover {
+header .navbar ul li a:hover {
     background: #cac8c8;
     transition: all 0.3s ease-out;
     transform: scale(1.01);
@@ -113,7 +109,7 @@ main {
 }
 
 
-#header .navbar ul li a.active {
+header .navbar ul li a.active {
     background: #cac8c8;
     color: #241e1e;
     transform: scale(1.01);
@@ -134,6 +130,7 @@ main {
 
     .navbar {
         display: none;
+
     }
 
     .navbar.active {
@@ -145,28 +142,26 @@ main {
 
 
 @media (max-width: 1200px) {
-    #header .container {
+    header .container {
         flex-direction: column;
     }
 
-    #header .navbar ul {
+    header .navbar ul {
         margin: 0;
-        padding: 0;
+        padding: 5px;
         display: grid;
         width: 100%;
 
     }
 
-    #header .navbar ul li {
+    header .navbar ul li {
         margin: 0;
         text-align: center;
-        margin: 2px 3px;
-
     }
 
-    #header .navbar ul li a {
+    header .navbar ul li a {
         display: block;
-        padding: 5px 0;
+        padding: 10px 0;
     }
 
 
@@ -176,13 +171,13 @@ main {
 
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    #header .navbar ul {
+    header .navbar ul {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    #header .navbar ul {
+    header .navbar ul {
         grid-template-columns: repeat(1, 1fr);
         border: 1px solid #e3d9d9;
         border-radius: 5px;
@@ -849,10 +844,11 @@ main {
 }
 
 .text_gioithieu {
-    text-indent: 30px;
-    padding: 20px;
+    text-indent: 20px;
+    padding: 10px;
     font-size: 16px;
     text-align: justify;
+    line-height: 1.8;
 }
 
 #video_gioithieu {
@@ -955,7 +951,7 @@ ul {
     grid-template-areas: "left right";
     display: grid;
     column-count: 2;
-    column-gap: 50px;
+    column-gap: 75px;
 }
 
 #lienhe h1 {
@@ -965,26 +961,21 @@ ul {
     margin-bottom: 20px;
 }
 
-.dau_lienhe {
-    font-size: 25px;
-    border-bottom: #241e1e solid 2px;
+.text_lienhe p{
+    line-height: 1.8;
 }
 
-.noidung_lienhe {
-    font-size: 16px;
-}
-
-.text_lienhe {
-    text-align: justify;
-    grid-area: left;
-    padding: 5px;
+.text_lienhe h2{
+    font-size: 30px;
+    border-bottom: #241e1e solid 1.8px;
+    font-weight: 500;
 }
 
 .form_feedback {
     font-size: 16px;
 }
 
-@media (max-width: 763px) {
+@media (max-width: 1024px) {
     .box_lienhe {
         grid-template-areas: "left"
             "right";
@@ -1001,20 +992,39 @@ ul {
 .form_table h2 {
     text-align: center;
     font-size: 30px;
+    white-space: nowrap;
+}
+
+.form_table input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form_table textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
 }
 
 .button_sub {
     background-color: rgb(8, 8, 8);
-    border: none;
     color: rgb(255, 255, 255);
-    padding: 13px 25px;
+    padding: 15px 40px;
+    border: none;
     text-align: center;
-    text-decoration: none;
     display: inline;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.btn_sub {
+    text-align: right;
 }
 
 .button_sub:hover {
