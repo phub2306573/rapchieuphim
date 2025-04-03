@@ -845,10 +845,11 @@ header .navbar ul li a.active {
 }
 
 .text_gioithieu {
-    text-indent: 30px;
-    padding: 20px;
+    text-indent: 20px;
+    padding: 10px;
     font-size: 16px;
     text-align: justify;
+    line-height: 1.8;
 }
 
 #video_gioithieu {
@@ -951,7 +952,7 @@ ul {
     grid-template-areas: "left right";
     display: grid;
     column-count: 2;
-    column-gap: 50px;
+    column-gap: 75px;
 }
 
 #lienhe h1 {
@@ -961,26 +962,21 @@ ul {
     margin-bottom: 20px;
 }
 
-.dau_lienhe {
-    font-size: 25px;
-    border-bottom: #241e1e solid 2px;
+.text_lienhe p{
+    line-height: 1.8;
 }
 
-.noidung_lienhe {
-    font-size: 16px;
-}
-
-.text_lienhe {
-    text-align: justify;
-    grid-area: left;
-    padding: 5px;
+.text_lienhe h2{
+    font-size: 30px;
+    border-bottom: #241e1e solid 1.8px;
+    font-weight: 500;
 }
 
 .form_feedback {
     font-size: 16px;
 }
 
-@media (max-width: 763px) {
+@media (max-width: 1024px) {
     .box_lienhe {
         grid-template-areas: "left"
             "right";
@@ -997,20 +993,39 @@ ul {
 .form_table h2 {
     text-align: center;
     font-size: 30px;
+    white-space: nowrap;
+}
+
+.form_table input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form_table textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
 }
 
 .button_sub {
     background-color: rgb(8, 8, 8);
-    border: none;
     color: rgb(255, 255, 255);
-    padding: 13px 25px;
+    padding: 15px 40px;
+    border: none;
     text-align: center;
-    text-decoration: none;
     display: inline;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.btn_sub {
+    text-align: right;
 }
 
 .button_sub:hover {
