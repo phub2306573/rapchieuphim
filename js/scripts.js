@@ -235,14 +235,15 @@ function add_cart(ID_film) {
 function TongTien() {
     let TienFlim = 0;
     let i;
+    let k = 0;
     let SLfilm = document.getElementsByClassName("SLfilm");
     for (i = 0; i < localStorage.length; i++) {
         let key = localStorage.key(i);
-        let k = 0;
+        
         if (key == "Combo" || key == "Pepsi" || key == "BongNgo") continue;
         else {
             TienFlim += sectionFilm[key].Price * SLfilm[k].value;
-            k++;
+             k++;
         }
     }
     let Cac_Do_An = document.getElementsByClassName("Mon");
