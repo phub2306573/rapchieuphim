@@ -825,6 +825,8 @@ header .navbar ul li a.active {
 
 }
 
+
+
 #gioithieu h1 {
     color: black;
     text-align: left;
@@ -869,7 +871,7 @@ header .navbar ul li a.active {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1024px) {
     .container_gallery {
         grid-template-areas: "topleft"
             "topright"
@@ -1011,7 +1013,7 @@ ul {
 .button_sub {
     background-color: rgb(8, 8, 8);
     color: rgb(255, 255, 255);
-    padding: 15px 40px;
+    padding: 15px 30px;
     border: none;
     text-align: center;
     display: inline;
@@ -1026,7 +1028,6 @@ ul {
 
 .button_sub:hover {
     background-color: rgb(94, 94, 94);
-    color: rgb(255, 255, 255);
 }
 
 
