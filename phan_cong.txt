@@ -1,4 +1,0 @@
-1, B2306573, Trần Minh Phú: trang chủ, header, footer, js header, css giỏ hàng
-2, B2306600, Trịnh Minh	Vĩ: sản phẩm, giỏ hàng, js phần sản phẩm, giỏ hàng
-3, B2305610, Nguyễn Hữu Thịnh: trang giới thiệu, trang liên hệ
-4, B2305612, Nguyễn Phúc Tiến: trang đăng nhập, trang đăng kí, js trang đăng kí
